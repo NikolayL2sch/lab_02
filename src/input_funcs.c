@@ -78,12 +78,12 @@ int input_student(struct Student *stud)
         rc = string_field_input(stud->adress.home_adress.street);
 
         printf("Введите номер дома (от 1 до 100): ");
-        if (scanf("%d", stud->adress.home_adress.house_num) != 1 || \
+        if (scanf("%d", &(stud->adress.home_adress.house_num)) != 1 || \
          stud->adress.home_adress.house_num < 1 || stud->adress.home_adress.house_num > 100)
             return INCORRECT_DATA;
         
         printf("Введите номер квартиры (от 1 до 1000): ");
-        if (scanf("%d", stud->adress.home_adress.flat_num) != 1 || \
+        if (scanf("%d", &(stud->adress.home_adress.flat_num)) != 1 || \
          stud->adress.home_adress.flat_num < 1 || stud->adress.home_adress.flat_num > 1000)
             return INCORRECT_DATA;
     }
