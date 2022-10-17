@@ -1,0 +1,6 @@
+%.o : %.c *.h
+	gcc -c $< -std=c99
+app.exe: main.o struct.o input.o measure_time.o
+	gcc -o app.exe main.o struct.o input.o measure_time.o
+clean:
+	rm -f *.o *.exe
