@@ -75,7 +75,7 @@ int menu()
     else if (choice == 4)
     {
         printf("Введите индекс студента для удаления: ");
-        if (scanf("%d", tmp) != 1 || tmp < 1 || tmp > studentTable.size)
+        if (scanf("%d", &tmp) != 1 || tmp < 1 || tmp > studentTable.size)
             return INCORRECT_DATA;
         
         remove_from_table(&studentTable, tmp);
