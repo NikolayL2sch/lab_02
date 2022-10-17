@@ -1,6 +1,8 @@
 #ifndef SORT_H
 #define SORT_H
 
+#include "struct.h"
+
 unsigned long long tick(void);
 void measure_sorting_time();
 
