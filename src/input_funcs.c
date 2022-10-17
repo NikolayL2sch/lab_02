@@ -39,36 +39,36 @@ int input_student(struct Student *stud)
     rc = string_field_input(stud->name);
 
     printf("Введите пол студента (0 - женский, 1 - мужской): ");
-    if (scanf("%d", stud->sex) != 1 || (stud->sex != 0 && stud->sex != 1))
+    if (scanf("%d", &(stud->sex)) != 1 || (stud->sex != 0 && stud->sex != 1))
         return INCORRECT_DATA;
     
     printf("Введите возраст (от 17 до 40 лет): ");
-    if (scanf("%d", stud->age) != 1 || stud->age < MIN_AGE || stud->age > MAX_AGE)
+    if (scanf("%d", &(stud->age)) != 1 || stud->age < MIN_AGE || stud->age > MAX_AGE)
         return INCORRECT_DATA;
     
     printf("Введите среднюю оценку (от 0 до 100 баллов): ");
-    if (scanf("%d", stud->average_grade) != 1 || stud->average_grade < MIN_AVERAGE || \
+    if (scanf("%d", &(stud->average_grade)) != 1 || stud->average_grade < MIN_AVERAGE || \
      stud->average_grade > MAX_AVERAGE)
         return INCORRECT_DATA;
     
     printf("Введите год поступления (от 1800 до 2022 года): ");
-    if (scanf("%d", stud->admission_year) != 1 || stud->admission_year < MIN_YEAR || \
+    if (scanf("%d", &(stud->admission_year)) != 1 || stud->admission_year < MIN_YEAR || \
      stud->admission_year > MAX_YEAR)
         return INCORRECT_DATA;
     
     printf("Введите тип дома (0 - обычный дом, 1 - общага): ");
-    if (scanf("%d", stud->house_type) != 1 || (stud->house_type != 0 && stud->house_type != 1))
+    if (scanf("%d", &(stud->house_type)) != 1 || (stud->house_type != 0 && stud->house_type != 1))
         return INCORRECT_DATA;
 
     if (stud->house_type)
     {
         printf("Введите номер общаги (от 1 до 9): ");
-        if (scanf("%d", stud->adress.obshaga.obshaga_num) != 1 || \
+        if (scanf("%d", &(stud->adress.obshaga.obshaga_num)) != 1 || \
          stud->adress.obshaga.obshaga_num < 1 || stud->adress.obshaga.obshaga_num > 9)
             return INCORRECT_DATA;
         
         printf("Введите номер комнаты (от 1 до 100): ");
-        if (scanf("%d", stud->adress.obshaga.room_num) != 1 || \
+        if (scanf("%d", &(stud->adress.obshaga.room_num)) != 1 || \
          stud->adress.obshaga.room_num < 1 || stud->adress.obshaga.room_num > 100)
             return INCORRECT_DATA;
     }
