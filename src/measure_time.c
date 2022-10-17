@@ -14,12 +14,13 @@ unsigned long long tick(void)
 
 void measure_sorting_time()
 {
-    char str[FILE_NAME_LEN];
+    char str[MAX_FILENAME_LEN];
     struct StudentTable tmp_table = {NULL, 0, 0};
     struct KeyTable tmp_key_table = {NULL, 0};
     unsigned long long tm, tms;
 
-    input_string("Input file name:\n", str, FILE_NAME_LEN);
+    printf("ֲגוהטעו טלÿ פאיכא: ");
+    file_input(str);
 
     FILE *in = fopen(str, "r");
 
