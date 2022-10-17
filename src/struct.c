@@ -261,3 +261,13 @@ void search(struct StudentTable *tbl)
         printf("  Nothing found.\n");
 
 }
+
+void clear_key_table(struct KeyTable* arr_keys)
+{
+    if (arr_keys->ptr_first != NULL)
+    {
+        free(arr_keys->ptr_first);
+        arr_keys->ptr_first = NULL;
+    }
+    arr_keys->n = 0;
+}
