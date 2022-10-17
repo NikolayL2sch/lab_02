@@ -4,7 +4,7 @@
 #include "struct.h"
 
 unsigned long long tick(void);
-void measure_sorting_time();
+void measure_sorting_time(void);
 
 void swap_students(struct Student *a, struct Student *b);
 void mysort_stud(struct Student *base, int nitems);

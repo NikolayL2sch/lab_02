@@ -1,7 +1,7 @@
 #include "errors.h"
 #include "constants.h"
 
-void print_add_err(int rc)
+void print_error(int rc)
 {
     switch (rc)
     {
