@@ -35,6 +35,18 @@ struct StudentTable
     int size_max;
 };
 
+struct Key
+{
+        int key;
+        int id;
+}Key;
+
+struct KeyTable
+{
+        struct Key* ptr_first;
+        int n;
+};
+
 int load_table(FILE *f, struct StudentTable *tbl);
 void clear_table(struct StudentTable *tbl);
 int save_table_into_file(FILE *f, struct StudentTable *tbl);
@@ -50,17 +62,5 @@ void sort_key_table(struct KeyTable *arr_keys);
 void print_key_table(const struct KeyTable* arr_keys);
 int print_stud_table_by_key(const struct StudentTable* arr_stud, const struct KeyTable* arr_keys);
 void search(struct StudentTable *tbl);
-
-struct Key
-{
-        int key;
-        int id;
-}Key;
-
-struct KeyTable
-{
-        struct Key* ptr_first;
-        int n;
-};
 
 #endif //_STRUCT_H
