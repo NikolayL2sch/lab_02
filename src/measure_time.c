@@ -91,8 +91,8 @@ void measure_sorting_time()
 
     printf("%15lld\n", tms/ITERATIONS);
 
-    printf("\nSIZE    : %14llu B", sizeof(struct Student) * tmp_table.size);
-    printf("%13llu B\n", sizeof(struct Key) * tmp_key_table.n);
+    printf("\nSIZE    : %14lu B", sizeof(struct Student) * tmp_table.size);
+    printf("%13lu B\n", sizeof(struct Key) * tmp_key_table.n);
     fclose(in);
 }
 
