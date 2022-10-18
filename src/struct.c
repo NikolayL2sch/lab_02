@@ -272,3 +272,33 @@ void clear_key_table(struct KeyTable* arr_keys)
     }
     arr_keys->n = 0;
 }
+
+void output_student_console(struct Student stud)
+{
+    printf("\nStudent: %s\n", stud.name);
+
+    printf("Sex: ");
+    if (stud.sex)
+        printf("male\n");
+    else
+        printf("female\n");
+
+    printf("Age: %d\n", stud.age);
+    printf("Average grade: %d\n", stud.average_grade);
+    printf("Admission_year: %d\n", stud.admission_year);
+
+    printf("House type: ");
+    if (stud.house_type)
+    {
+        printf("hostel\n");
+        printf("Hostel number: %d\n", stud.adress.obshaga.obshaga_num);
+        printf("Room number: %d\n", stud.adress.obshaga.room_num);
+    }
+    else
+    {
+        printf("home\n");
+        printf("Street: %s\n", stud.adress.home_adress.street);
+        printf("House number: %d\n", stud.adress.home_adress.house_num);
+        printf("House appartment number: %d\n", stud.adress.home_adress.flat_num);
+    }
+}

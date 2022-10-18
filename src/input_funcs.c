@@ -31,6 +31,39 @@ int string_field_input(char *str)
     return EXIT_SUCCESS;
 }
 
+struct Student *input_student_file(FILE *f)
+{
+    struct Student *stud = (struct Student*)malloc(sizeof(struct Student));
+    int flag = 0;
+    if (fscanf(f, "%[^\n]\n", stud->name) != 1) flag = -1;
+    if (fscanf(f, "%d", &stud->sex) != 1) flag = -1;
+    if (fscanf(f, "%d", &stud->age) != 1) flag = -1;
+    if (fscanf(f, "%d", &stud->average_grade) != 1) flag = -1;
+    if (fscanf(f, "%d", &stud->admission_year) != 1) flag = -1;
+    if (fscanf(f, "%d", &stud->house_type) != 1) flag = -1;
+
+    if (stud->house_type) // if hostel
+    {
+
+        if (fscanf(f, "%d", &stud->adress.obshaga.obshaga_num) != 1) flag = -1;
+        if (fscanf(f, "%d", &stud->adress.obshaga.room_num) != 1) flag = -1;
+    }
+    else
+    {
+        if (fscanf(f, "\n%[^\n]\n", stud->adress.home_adress.street) != 1)
+        {
+            flag = -1;
+            //printf("something wrong");
+        }
+        //printf("SCANF %s\n", stud->adress.home_adress.street);
+        if (fscanf(f, "%d", &stud->adress.home_adress.house_num) != 1) flag = -1;
+        if (fscanf(f, "%d", &stud->adress.home_adress.flat_num) != 1) flag = -1;
+    }
+    //fscanf(f, "\n"); // NOTE
+    (void)flag;
+    return stud;
+}
+
 int input_student(struct Student *stud)
 {
     int rc = 0;
@@ -91,65 +124,3 @@ int input_student(struct Student *stud)
     return rc;
 }
 
-struct Student *input_student_file(FILE *f)
-{
-    struct Student *stud = (struct Student*)malloc(sizeof(struct Student));
-    int flag = 0;
-    if (fscanf(f, "%[^\n]\n", stud->name) != 1) flag = -1;
-    if (fscanf(f, "%d", &stud->sex) != 1) flag = -1;
-    if (fscanf(f, "%d", &stud->age) != 1) flag = -1;
-    if (fscanf(f, "%d", &stud->average_grade) != 1) flag = -1;
-    if (fscanf(f, "%d", &stud->admission_year) != 1) flag = -1;
-    if (fscanf(f, "%d", &stud->house_type) != 1) flag = -1;
-
-    if (stud->house_type) // if hostel
-    {
-
-        if (fscanf(f, "%d", &stud->adress.obshaga.obshaga_num) != 1) flag = -1;
-        if (fscanf(f, "%d", &stud->adress.obshaga.room_num) != 1) flag = -1;
-    }
-    else
-    {
-        if (fscanf(f, "\n%[^\n]\n", stud->adress.home_adress.street) != 1)
-        {
-            flag = -1;
-            //printf("something wrong");
-        }
-        //printf("SCANF %s\n", stud->adress.home_adress.street);
-        if (fscanf(f, "%d", &stud->adress.home_adress.house_num) != 1) flag = -1;
-        if (fscanf(f, "%d", &stud->adress.home_adress.flat_num) != 1) flag = -1;
-    }
-    //fscanf(f, "\n"); // NOTE
-    (void)flag;
-    return stud;
-}
-
-void output_student_console(struct Student stud)
-{
-    printf("\nStudent: %s\n", stud.name);
-
-    printf("Sex: ");
-    if (stud.sex)
-        printf("male\n");
-    else
-        printf("female\n");
-
-    printf("Age: %d\n", stud.age);
-    printf("Average grade: %d\n", stud.average_grade);
-    printf("Admission_year: %d\n", stud.admission_year);
-
-    printf("House type: ");
-    if (stud.house_type)
-    {
-        printf("hostel\n");
-        printf("Hostel number: %d\n", stud.adress.obshaga.obshaga_num);
-        printf("Room number: %d\n", stud.adress.obshaga.room_num);
-    }
-    else
-    {
-        printf("home\n");
-        printf("Street: %s\n", stud.adress.home_adress.street);
-        printf("House number: %d\n", stud.adress.home_adress.house_num);
-        printf("House appartment number: %d\n", stud.adress.home_adress.flat_num);
-    }
-}

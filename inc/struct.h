@@ -62,5 +62,7 @@ void sort_key_table(struct KeyTable *arr_keys);
 void print_key_table(const struct KeyTable* arr_keys);
 int print_stud_table_by_key(const struct StudentTable* arr_stud, const struct KeyTable* arr_keys);
 void search(struct StudentTable *tbl);
+void clear_key_table(struct KeyTable* arr_keys);
+void output_student_console(struct Student stud);
 
 #endif //_STRUCT_H
