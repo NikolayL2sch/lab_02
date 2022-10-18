@@ -13,7 +13,7 @@ int menu()
 
     struct Student tmp_stud;
 
-    printf("\nМеню взвимодействия:\t"
+    printf("\nМеню взаимодействия:\n\t"
         "1 - Загрузить данные из файла\n\t"
         "2 - Сохранить данные в файл\n\t"
         "3 - Добавить запись\n\t"
@@ -22,10 +22,10 @@ int menu()
         "6 - Вывести таблицу\n\t"
         "7 - Создать таблицу ключей\n\t"
         "8 - Сортировать таблицу ключей\n\t"
-        "9 - Print key table\n\t"
+        "9 - Вывести таблицу ключей\n\t"
         "10 - Print table in key order\n\t"
-        "11 - Search\n\t"
-        "12 - Measure sorting time\n\t"
+        "11 - Выполнить поиск\n\t"
+        "12 - Измерить время сортировки данных\n\t"
         "0 - Exit\n");
 
     if (scanf("%d", &choice) != 1)
@@ -39,6 +39,7 @@ int menu()
     else if (choice == 1)
     {
         printf("Введите имя файла: ");
+        scanf("\n");
         file_input(filename);
         FILE *f_in = fopen(filename, "r");
         if (f_in == NULL || feof(f_in))
@@ -46,7 +47,6 @@ int menu()
             print_error(INCORRECT_FILENAME);
             return INCORRECT_FILENAME;
         }
-        
         rc = load_table(f_in, &studentTable);
         if (rc)
         {
@@ -54,6 +54,7 @@ int menu()
             return rc;
         }
         fclose(f_in);
+        printf("Данные из файла загружены в таблицу!");
     }
     else if (choice == 2)
     {
@@ -77,6 +78,7 @@ int menu()
     else if (choice == 4)
     {
         printf("Введите индекс студента для удаления: ");
+        fflush(stdin);
         if (scanf("%d", &tmp) != 1 || tmp < 1 || tmp > studentTable.size)
             return INCORRECT_DATA;
         
