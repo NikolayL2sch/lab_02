@@ -17,32 +17,66 @@ void clear_table(struct StudentTable *tbl)
 struct Student *input_student_file(FILE *f)
 {
     struct Student *stud = (struct Student*)malloc(sizeof(struct Student));
+    printf("Here");
     int flag = 0;
-    if (fscanf(f, "%[^\n]\n", stud->name) != 1) flag = -1;
-    if (fscanf(f, "%d", &stud->sex) != 1) flag = -1;
-    if (fscanf(f, "%d", &stud->age) != 1) flag = -1;
-    if (fscanf(f, "%d", &stud->average_grade) != 1) flag = -1;
-    if (fscanf(f, "%d", &stud->admission_year) != 1) flag = -1;
-    if (fscanf(f, "%d", &stud->house_type) != 1) flag = -1;
-
+    if (fscanf(f, "%s", stud->name) != 1)
+    {
+    	printf("\nHere\n");
+    	flag--;
+    }
+    if (fscanf(f, "%d", &stud->sex) != 1)
+    {
+    	printf("\nHere2\n");
+    	flag--;
+    }
+    if (fscanf(f, "%d", &stud->age) != 1)
+    { 
+    	printf("\nHere3\n");
+    	flag--;
+    }
+    if (fscanf(f, "%d", &stud->average_grade) != 1)
+    {
+    	printf("\nHere4\n");
+    	flag--;
+    }
+    if (fscanf(f, "%d", &stud->admission_year) != 1)
+    {
+    	printf("\nHere5\n");
+    	flag--;
+    }
+    if (fscanf(f, "%d", &stud->house_type) != 1)
+    {
+    	printf("\nHere6\n");
+    	flag = -1;
+	}
+	
     if (stud->house_type) // if hostel
     {
 
-        if (fscanf(f, "%d", &stud->adress.obshaga.obshaga_num) != 1) flag = -1;
-        if (fscanf(f, "%d", &stud->adress.obshaga.room_num) != 1) flag = -1;
+        if (fscanf(f, "%d", &stud->adress.obshaga.obshaga_num) != 1) 
+        {
+        	printf("\nHere7\n");
+        	flag = -1;
+        }	
+        if (fscanf(f, "%d", &stud->adress.obshaga.room_num) != 1)
+        {
+        	printf("\nHere8\n");
+        	flag = -1;
+        }
     }
     else
     {
-        if (fscanf(f, "\n%[^\n]\n", stud->adress.home_adress.street) != 1)
+        if (fscanf(f, "%s", stud->adress.home_adress.street) != 1)
         {
             flag = -1;
-            //printf("something wrong");
+            printf("something wrong");
         }
         //printf("SCANF %s\n", stud->adress.home_adress.street);
         if (fscanf(f, "%d", &stud->adress.home_adress.house_num) != 1) flag = -1;
         if (fscanf(f, "%d", &stud->adress.home_adress.flat_num) != 1) flag = -1;
     }
     //fscanf(f, "\n"); // NOTE
+    printf("here");
     (void)flag;
     return stud;
 }
@@ -56,7 +90,7 @@ int add_to_table(struct StudentTable *tbl, const struct Student *stud)
         struct Student *ptr_tmp = tbl->ptr_first;
 
         tbl->size_max += MALLOC_STEP;
-
+		printf("still here");
         struct Student *ptr_new = (struct Student*) malloc(tbl->size_max * sizeof(struct Student));
 
         if (ptr_new == NULL)
@@ -86,8 +120,9 @@ int load_table(FILE *f, struct StudentTable *tbl)
     clear_table(tbl);
 
     if (fscanf(f, "%d\n\n", &size) != 1)
+    {
         return INCORRECT_DATA;
-
+	}
     for (int i = 0; i < size; i++)
     {
         fscanf(f, "\n");
