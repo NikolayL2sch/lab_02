@@ -1,6 +1,7 @@
 #include "constants.h"
 #include "errors.h"
 #include "measure_time.h"
+#include "struct_funcs.h"
 
 int menu()
 {

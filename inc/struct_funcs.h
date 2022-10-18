@@ -20,5 +20,7 @@ int print_stud_table_by_key(const struct StudentTable* arr_stud, const struct Ke
 void search(struct StudentTable *tbl);
 void clear_key_table(struct KeyTable* arr_keys);
 void output_student_console(struct Student stud);
+struct Student *input_student_file(FILE *f);
+int input_student(struct Student *stud);
 
 #endif
