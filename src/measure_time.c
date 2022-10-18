@@ -1,5 +1,4 @@
-#include "input_funcs.h"
-#include "struct.h"
+#include "struct_funcs.h"
 
 #define ITERATIONS 100
 #define FILE_NAME_LEN 30
