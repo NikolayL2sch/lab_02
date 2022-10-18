@@ -2,24 +2,6 @@
 #include "input_funcs.h"
 #include "struct.h"
 
-int load_table(FILE *f, struct StudentTable *tbl)
-{
-    int size;
-
-    clear_table(tbl);
-
-    if (fscanf(f, "%d\n\n", &size) != 1)
-        return INCORRECT_DATA;
-
-    for (int i = 0; i < size; i++)
-    {
-        fscanf(f, "\n");
-        add_to_table(tbl, input_student_file(f));
-    }
-
-    return EXIT_SUCCESS;
-}
-
 void clear_table(struct StudentTable *tbl)
 {
     tbl->size = 0;
@@ -32,41 +14,37 @@ void clear_table(struct StudentTable *tbl)
     }
 }
 
-int save_table_into_file(FILE *f, struct StudentTable *tbl)
+struct Student *input_student_file(FILE *f)
 {
-    struct Student *ptr_cur = tbl->ptr_first; //ptr_first - указатель на первого студента
-    fprintf(f, "%d\n\n", tbl->size);
+    struct Student *stud = (struct Student*)malloc(sizeof(struct Student));
+    int flag = 0;
+    if (fscanf(f, "%[^\n]\n", stud->name) != 1) flag = -1;
+    if (fscanf(f, "%d", &stud->sex) != 1) flag = -1;
+    if (fscanf(f, "%d", &stud->age) != 1) flag = -1;
+    if (fscanf(f, "%d", &stud->average_grade) != 1) flag = -1;
+    if (fscanf(f, "%d", &stud->admission_year) != 1) flag = -1;
+    if (fscanf(f, "%d", &stud->house_type) != 1) flag = -1;
 
-    for (int i = 0; i < tbl->size; i++)
+    if (stud->house_type) // if hostel
     {
-        print_students_into_file(f, *ptr_cur);
-        ptr_cur++;
-    }
 
-    return EXIT_SUCCESS;
-}
-
-void print_students_into_file(FILE *f, struct Student stud)
-{
-    fprintf(f, "%s\n", stud.name);
-    fprintf(f, "%d\n", stud.sex);
-    fprintf(f, "%d\n", stud.age);
-    fprintf(f, "%d\n", stud.average_grade);
-    fprintf(f, "%d\n", stud.admission_year);
-    fprintf(f, "%d\n", stud.house_type);
-
-    if (stud.house_type)
-    {
-        fprintf(f, "%d\n", stud.adress.obshaga.obshaga_num);
-        fprintf(f, "%d\n", stud.adress.obshaga.room_num);
+        if (fscanf(f, "%d", &stud->adress.obshaga.obshaga_num) != 1) flag = -1;
+        if (fscanf(f, "%d", &stud->adress.obshaga.room_num) != 1) flag = -1;
     }
     else
     {
-        fprintf(f, "%s\n", stud.adress.home_adress.street);
-        fprintf(f, "%d\n", stud.adress.home_adress.house_num);
-        fprintf(f, "%d\n", stud.adress.home_adress.flat_num);
+        if (fscanf(f, "\n%[^\n]\n", stud->adress.home_adress.street) != 1)
+        {
+            flag = -1;
+            //printf("something wrong");
+        }
+        //printf("SCANF %s\n", stud->adress.home_adress.street);
+        if (fscanf(f, "%d", &stud->adress.home_adress.house_num) != 1) flag = -1;
+        if (fscanf(f, "%d", &stud->adress.home_adress.flat_num) != 1) flag = -1;
     }
-    fprintf(f, "\n");
+    //fscanf(f, "\n"); // NOTE
+    (void)flag;
+    return stud;
 }
 
 int add_to_table(struct StudentTable *tbl, const struct Student *stud)
@@ -101,6 +79,61 @@ int add_to_table(struct StudentTable *tbl, const struct Student *stud)
     return EXIT_SUCCESS;
 }
 
+int load_table(FILE *f, struct StudentTable *tbl)
+{
+    int size;
+
+    clear_table(tbl);
+
+    if (fscanf(f, "%d\n\n", &size) != 1)
+        return INCORRECT_DATA;
+
+    for (int i = 0; i < size; i++)
+    {
+        fscanf(f, "\n");
+        add_to_table(tbl, input_student_file(f));
+    }
+
+    return EXIT_SUCCESS;
+}
+
+void print_students_into_file(FILE *f, struct Student stud)
+{
+    fprintf(f, "%s\n", stud.name);
+    fprintf(f, "%d\n", stud.sex);
+    fprintf(f, "%d\n", stud.age);
+    fprintf(f, "%d\n", stud.average_grade);
+    fprintf(f, "%d\n", stud.admission_year);
+    fprintf(f, "%d\n", stud.house_type);
+
+    if (stud.house_type)
+    {
+        fprintf(f, "%d\n", stud.adress.obshaga.obshaga_num);
+        fprintf(f, "%d\n", stud.adress.obshaga.room_num);
+    }
+    else
+    {
+        fprintf(f, "%s\n", stud.adress.home_adress.street);
+        fprintf(f, "%d\n", stud.adress.home_adress.house_num);
+        fprintf(f, "%d\n", stud.adress.home_adress.flat_num);
+    }
+    fprintf(f, "\n");
+}
+
+int save_table_into_file(FILE *f, struct StudentTable *tbl)
+{
+    struct Student *ptr_cur = tbl->ptr_first; //ptr_first - указатель на первого студента
+    fprintf(f, "%d\n\n", tbl->size);
+
+    for (int i = 0; i < tbl->size; i++)
+    {
+        print_students_into_file(f, *ptr_cur);
+        ptr_cur++;
+    }
+
+    return EXIT_SUCCESS;
+}
+
 int remove_from_table(struct StudentTable *tbl, int i)
 {
     if (i > 0 && i <= tbl->size)
@@ -122,6 +155,36 @@ void sort_stud_table(struct StudentTable *tbl)
     qsort(tbl->ptr_first, tbl->size, sizeof(struct Student), cmp_stud);
 }
 
+void output_student_console(struct Student stud)
+{
+    printf("\nStudent: %s\n", stud.name);
+
+    printf("Sex: ");
+    if (stud.sex)
+        printf("male\n");
+    else
+        printf("female\n");
+
+    printf("Age: %d\n", stud.age);
+    printf("Average grade: %d\n", stud.average_grade);
+    printf("Admission_year: %d\n", stud.admission_year);
+
+    printf("House type: ");
+    if (stud.house_type)
+    {
+        printf("hostel\n");
+        printf("Hostel number: %d\n", stud.adress.obshaga.obshaga_num);
+        printf("Room number: %d\n", stud.adress.obshaga.room_num);
+    }
+    else
+    {
+        printf("home\n");
+        printf("Street: %s\n", stud.adress.home_adress.street);
+        printf("House number: %d\n", stud.adress.home_adress.house_num);
+        printf("House appartment number: %d\n", stud.adress.home_adress.flat_num);
+    }
+}
+
 void output_stTable_console(struct StudentTable *tbl)
 {
     struct Student *ptr_cur = tbl->ptr_first;
@@ -141,6 +204,16 @@ void output_stTable_console(struct StudentTable *tbl)
             ptr_cur++;
         }
     }
+}
+
+void clear_key_table(struct KeyTable* arr_keys)
+{
+    if (arr_keys->ptr_first != NULL)
+    {
+        free(arr_keys->ptr_first);
+        arr_keys->ptr_first = NULL;
+    }
+    arr_keys->n = 0;
 }
 
 int create_key_table(struct StudentTable* arr_stud, struct KeyTable* arr_keys)
@@ -261,79 +334,6 @@ void search(struct StudentTable *tbl)
     if (!flag)
         printf("  Nothing found.\n");
 
-}
-
-void clear_key_table(struct KeyTable* arr_keys)
-{
-    if (arr_keys->ptr_first != NULL)
-    {
-        free(arr_keys->ptr_first);
-        arr_keys->ptr_first = NULL;
-    }
-    arr_keys->n = 0;
-}
-
-void output_student_console(struct Student stud)
-{
-    printf("\nStudent: %s\n", stud.name);
-
-    printf("Sex: ");
-    if (stud.sex)
-        printf("male\n");
-    else
-        printf("female\n");
-
-    printf("Age: %d\n", stud.age);
-    printf("Average grade: %d\n", stud.average_grade);
-    printf("Admission_year: %d\n", stud.admission_year);
-
-    printf("House type: ");
-    if (stud.house_type)
-    {
-        printf("hostel\n");
-        printf("Hostel number: %d\n", stud.adress.obshaga.obshaga_num);
-        printf("Room number: %d\n", stud.adress.obshaga.room_num);
-    }
-    else
-    {
-        printf("home\n");
-        printf("Street: %s\n", stud.adress.home_adress.street);
-        printf("House number: %d\n", stud.adress.home_adress.house_num);
-        printf("House appartment number: %d\n", stud.adress.home_adress.flat_num);
-    }
-}
-
-struct Student *input_student_file(FILE *f)
-{
-    struct Student *stud = (struct Student*)malloc(sizeof(struct Student));
-    int flag = 0;
-    if (fscanf(f, "%[^\n]\n", stud->name) != 1) flag = -1;
-    if (fscanf(f, "%d", &stud->sex) != 1) flag = -1;
-    if (fscanf(f, "%d", &stud->age) != 1) flag = -1;
-    if (fscanf(f, "%d", &stud->average_grade) != 1) flag = -1;
-    if (fscanf(f, "%d", &stud->admission_year) != 1) flag = -1;
-    if (fscanf(f, "%d", &stud->house_type) != 1) flag = -1;
-
-    if (stud->house_type) // if hostel
-    {
-
-        if (fscanf(f, "%d", &stud->adress.obshaga.obshaga_num) != 1) flag = -1;
-        if (fscanf(f, "%d", &stud->adress.obshaga.room_num) != 1) flag = -1;
-    }
-    else
-    {
-        if (fscanf(f, "\n%[^\n]\n", stud->adress.home_adress.street) != 1)
-        {
-            flag = -1;
-            //printf("something wrong");
-        }
-        //printf("SCANF %s\n", stud->adress.home_adress.street);
-        if (fscanf(f, "%d", &stud->adress.home_adress.house_num) != 1) flag = -1;
-        if (fscanf(f, "%d", &stud->adress.home_adress.flat_num) != 1) flag = -1;
-    }
-    //fscanf(f, "\n"); // NOTE
-    (void)flag;
-    return stud;
 }
 
 int input_student(struct Student *stud)
