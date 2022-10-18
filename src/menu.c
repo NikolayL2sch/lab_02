@@ -2,6 +2,7 @@
 #include "errors.h"
 #include "measure_time.h"
 #include "struct_funcs.h"
+#include "input_funcs.h"
 
 int menu()
 {
