@@ -10,6 +10,53 @@ unsigned long long tick(void)
     return d;
 }
 
+void swap_students(struct Student *a, struct Student *b)
+{
+    struct Student tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+
+
+void mysort_stud(struct Student *base, int nitems)
+{
+    struct Student *pb = (struct Student *)base;
+    struct Student *pe = pb + nitems;
+
+    for (int i = 0; i < nitems; i++)
+    {
+        for (int j = 0; j < (pe - pb) - 1; j++)
+            if (cmp_stud((void*)(pb + j), (void*)(pb + j+1)) >= 0)
+            {
+                swap_students((pb + j), (pb + j+1));
+            }
+        pe--;
+    }
+}
+
+void swap_keys(struct Key *a, struct Key *b)
+{
+    struct Key tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+
+void mysort_keys(struct Key *base, size_t nitems)
+{
+    struct Key *pb = (struct Key *)base;
+    struct Key *pe = pb + nitems;
+
+    for (int i = 0; i < nitems; i++)
+    {
+        for (int j = 0; j < (pe - pb) - 1; j++)
+            if (cmp_key((void*)(pb + j), (void*)(pb + j+1)) >= 0)
+            {
+                swap_keys((pb + j), (pb + j+1));
+            }
+        pe--;
+    }
+}
+
 void measure_sorting_time()
 {
     char str[MAX_FILENAME_LEN];
@@ -94,51 +141,3 @@ void measure_sorting_time()
     fclose(in);
 }
 
-
-void swap_students(struct Student *a, struct Student *b)
-{
-    struct Student tmp = *a;
-    *a = *b;
-    *b = tmp;
-}
-
-
-void mysort_stud(struct Student *base, int nitems)
-{
-    struct Student *pb = (struct Student *)base;
-    struct Student *pe = pb + nitems;
-
-    for (int i = 0; i < nitems; i++)
-    {
-        for (int j = 0; j < (pe - pb) - 1; j++)
-            if (cmp_stud((void*)(pb + j), (void*)(pb + j+1)) >= 0)
-            {
-                swap_students((pb + j), (pb + j+1));
-            }
-        pe--;
-    }
-}
-
-
-void swap_keys(struct Key *a, struct Key *b)
-{
-    struct Key tmp = *a;
-    *a = *b;
-    *b = tmp;
-}
-
-void mysort_keys(struct Key *base, size_t nitems)
-{
-    struct Key *pb = (struct Key *)base;
-    struct Key *pe = pb + nitems;
-
-    for (int i = 0; i < nitems; i++)
-    {
-        for (int j = 0; j < (pe - pb) - 1; j++)
-            if (cmp_key((void*)(pb + j), (void*)(pb + j+1)) >= 0)
-            {
-                swap_keys((pb + j), (pb + j+1));
-            }
-        pe--;
-    }
-}
