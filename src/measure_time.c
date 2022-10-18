@@ -1,6 +1,4 @@
-#include "measure_time.h"
 #include "input_funcs.h"
-#include "struct.h"
 
 #define ITERATIONS 100
 #define FILE_NAME_LEN 30

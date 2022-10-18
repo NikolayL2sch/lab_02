@@ -1,6 +1,4 @@
 #include "constants.h"
-#include "input_funcs.h"
-#include "struct.h"
 #include "errors.h"
 #include "measure_time.h"
 

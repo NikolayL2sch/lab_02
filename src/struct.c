@@ -1,5 +1,4 @@
 #include "constants.h"
-#include "struct.h"
 #include "input_funcs.h"
 
 int load_table(FILE *f, struct StudentTable *tbl)
