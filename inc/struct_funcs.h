@@ -3,7 +3,7 @@
 
 #include "struct.h"
 
-int load_table(FILE *f, struct StudentTable *tbl);
+int read_from_file(FILE *f, const struct Student *stud, int *size, struct Key *keys);
 void clear_table(struct StudentTable *tbl);
 int save_table_into_file(FILE *f, struct StudentTable *tbl);
 void print_students_into_file(FILE *f, struct Student stud);
