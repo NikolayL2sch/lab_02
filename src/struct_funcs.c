@@ -14,121 +14,17 @@ void clear_table(struct StudentTable *tbl)
     }
 }
 
-struct Student *input_student_file(FILE *f)
+int read_from_file(FILE *f, const struct Student *stud, int *size, struct Key *keys)
 {
-    struct Student *stud = (struct Student*)malloc(sizeof(struct Student));
-    printf("Here");
-    int flag = 0;
-    if (fscanf(f, "%s", stud->name) != 1)
+    int stud_cnt = *size;
+    int rc = 0;
+    while(!feof(f))
     {
-    	printf("\nHere\n");
-    	flag--;
+    	rc = fscanf(f, "%100s %d %d %d %d %d", stud[stud_cnt].name, stud[stud_cnt].sex, stud[stud_cnt].age, stud[stud_cnt].average_grade, stud[stud_cnt].admission_year, stud[stud_cnt].house_type);
+    	keys[stud_cnt].id = stud_cnt;
+    	if (rc != 6)
+    		return INCORRECT_DATA;
     }
-    if (fscanf(f, "%d", &stud->sex) != 1)
-    {
-    	printf("\nHere2\n");
-    	flag--;
-    }
-    if (fscanf(f, "%d", &stud->age) != 1)
-    { 
-    	printf("\nHere3\n");
-    	flag--;
-    }
-    if (fscanf(f, "%d", &stud->average_grade) != 1)
-    {
-    	printf("\nHere4\n");
-    	flag--;
-    }
-    if (fscanf(f, "%d", &stud->admission_year) != 1)
-    {
-    	printf("\nHere5\n");
-    	flag--;
-    }
-    if (fscanf(f, "%d", &stud->house_type) != 1)
-    {
-    	printf("\nHere6\n");
-    	flag = -1;
-	}
-	
-    if (stud->house_type) // if hostel
-    {
-
-        if (fscanf(f, "%d", &stud->adress.obshaga.obshaga_num) != 1) 
-        {
-        	printf("\nHere7\n");
-        	flag = -1;
-        }	
-        if (fscanf(f, "%d", &stud->adress.obshaga.room_num) != 1)
-        {
-        	printf("\nHere8\n");
-        	flag = -1;
-        }
-    }
-    else
-    {
-        if (fscanf(f, "%s", stud->adress.home_adress.street) != 1)
-        {
-            flag = -1;
-            printf("something wrong");
-        }
-        //printf("SCANF %s\n", stud->adress.home_adress.street);
-        if (fscanf(f, "%d", &stud->adress.home_adress.house_num) != 1) flag = -1;
-        if (fscanf(f, "%d", &stud->adress.home_adress.flat_num) != 1) flag = -1;
-    }
-    //fscanf(f, "\n"); // NOTE
-    printf("here");
-    (void)flag;
-    return stud;
-}
-
-int add_to_table(struct StudentTable *tbl, const struct Student *stud)
-{
-
-    if (tbl->size >= tbl->size_max)
-    {
-        struct Student *ptr_free = tbl->ptr_first;
-        struct Student *ptr_tmp = tbl->ptr_first;
-
-        tbl->size_max += MALLOC_STEP;
-		printf("still here");
-        struct Student *ptr_new = (struct Student*) malloc(tbl->size_max * sizeof(struct Student));
-
-        if (ptr_new == NULL)
-            return MEMORY_ERROR;
-
-        tbl->ptr_first = ptr_new;
-
-        for (int i = 0; i < tbl->size; i++)
-        {
-            *ptr_new = *ptr_tmp;
-            ptr_tmp++;
-            ptr_new++;
-        }
-        free(ptr_free);
-    }
-
-    tbl->size++;
-    tbl->ptr_first[tbl->size - 1] = *stud;
-
-    return EXIT_SUCCESS;
-}
-
-int load_table(FILE *f, struct StudentTable *tbl)
-{
-    int size;
-
-    clear_table(tbl);
-
-    if (fscanf(f, "%d\n\n", &size) != 1)
-    {
-        return INCORRECT_DATA;
-	}
-    for (int i = 0; i < size; i++)
-    {
-        fscanf(f, "\n");
-        add_to_table(tbl, input_student_file(f));
-    }
-
     return EXIT_SUCCESS;
 }
 
@@ -225,19 +121,13 @@ void output_stTable_console(struct StudentTable *tbl)
     struct Student *ptr_cur = tbl->ptr_first;
     printf("\nTable:\n");
 
-    if (!tbl->size)
-        puts("Table is empty!");
-    else
+    printf("--------------------------------------------\n");
+    for (int i = 0; i < tbl->size; i++)
     {
+		printf("[ Student %d ]\n", (i + 1));
+        output_student_console(*ptr_cur);
         printf("--------------------------------------------\n");
-        for (int i = 0; i < tbl->size; i++)
-        {
-
-            printf("[ Student %d ]\n", (i + 1));
-            output_student_console(*ptr_cur);
-            printf("--------------------------------------------\n");
-            ptr_cur++;
-        }
+        ptr_cur++;
     }
 }
 
