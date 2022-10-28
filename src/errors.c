@@ -18,7 +18,9 @@ void print_error(int rc)
             break;
         case INCORRECT_CHOICE:
             printf("\nОШИБКА! Некорректный выбор в меню.");
+            break;
         case INCORRECT_FILENAME:
             printf("\nОШИБКА! Некорректно задано имя файла.");
+            break;
     }
 }
