@@ -24,5 +24,6 @@
 #define MIN_YEAR 1800
 #define MAX_YEAR 2022
 #define MALLOC_STEP 10
+#define MAX_STREET_LEN 20
 
 #endif //_CONSTANTS_H
