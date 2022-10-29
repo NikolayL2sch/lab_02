@@ -24,6 +24,7 @@ int bubble_table(table_t table)
         return DATA_EMPTY_ERR;
 
     bubble_sort_students(students, table.size);
+    return EXIT_SUCCESS;
 }
 
 void bubble_sort_keys(key_t *keys, int size)
@@ -48,6 +49,7 @@ int bubble_table_keys(table_t table)
         return DATA_EMPTY_ERR;
 
     bubble_sort_keys(keys, table.size);
+    return EXIT_SUCCESS;
 }
 
 int comparator_table(const void *val1, const void *val2)
@@ -61,6 +63,7 @@ int qsort_table(table_t table)
         return DATA_EMPTY_ERR;
     
     qsort(table.ptr_first, table.size, sizeof(student_t), comparator_table);
+    return EXIT_SUCCESS;
 }
 
 int comparator_keys(const void *val1, const void *val2)
@@ -73,6 +76,7 @@ int qsort_keys(table_t table)
     if (table.size == 0)
         return DATA_EMPTY_ERR;
     qsort(table.keys, table.size, sizeof(key_t), comparator_keys);
+    return EXIT_SUCCESS;
 }
 
 unsigned long long tick_count(void)
@@ -80,8 +84,8 @@ unsigned long long tick_count(void)
     unsigned long high, low;
     __asm__ __volatile__ (
         "rdtsc\n"
-        "movl %%edx, %0\n"
-        "movl %%eax, %1\n"
+        "movq %%rdx, %0\n"
+        "movq %%rax, %1\n"
         : "=r" (high), "=r" (low)
         :: "%rax", "%rbx", "%rcx", "%rdx"
         );
@@ -93,7 +97,7 @@ unsigned long long tick_count(void)
 
 void print_result(unsigned long long start, unsigned long long end)
 {
-    printf("\n %ld ??????, %.10lf ??????\n\n", end - start, (double)(end - start)/GHZ);
+    printf("\n %llu тактов, %.10lf секунд\n\n", end - start, (double)(end - start)/GHZ);
 }
 
 int compare_sorts(FILE *f)
@@ -110,13 +114,13 @@ int compare_sorts(FILE *f)
     if (rc)
         return INCORRECT_DATA;
     
-    printf("\n\n?????????? ????? ?? %d ???????\n\n", size);
+    printf("Сортировка файла из %d записей\n\n", size);
     puts("-------------------------------------------------------------------------");
 
     start_bubble_1 = tick_count();
     bubble_sort_students(students, size);
     end_bubble_1 = tick_count();
-    puts("?????????? ??????? ?????????: ");
+    puts("Сортировка таблицы пузырьком: ");
     print_result(start_bubble_1, end_bubble_1);
     puts("-------------------------------------------------------------------------");
     size = 0;
@@ -127,12 +131,12 @@ int compare_sorts(FILE *f)
     start_bubble_2 = tick_count();
     bubble_sort_keys(keys, size);
     end_bubble_2 = tick_count();
-    puts("?????????? ??????? ?????? ?????????: ");
+    puts("Сортировка таблицы ключей пузырьком: ");
     print_result(start_bubble_2, end_bubble_2);
 
     size = 0;
     puts("-------------------------------------------------------------------------");
-    rc = read_file(f, students, &size, keys);
+    rc = read_from_file(f, students, &size, keys);
     if (rc)
         return INCORRECT_DATA;
     
@@ -140,20 +144,20 @@ int compare_sorts(FILE *f)
     qsort(students, size, sizeof(student_t), comparator_table);
     end_qsort_1 = tick_count();
 
-    puts("?????????? ??????? qsort: ");
+    puts("Сортировка таблицы qsort: ");
     print_result(start_qsort_1, end_qsort_1);
     size = 0;
     puts("-------------------------------------------------------------------------");
 
-    rc = read_file(f, students, &size, keys);
+    rc = read_from_file(f, students, &size, keys);
     start_qsort_2 = tick_count();
     qsort(keys, size, sizeof(key_t), comparator_keys);
     end_qsort_2 = tick_count();
-    puts("?????????? ??????? ?????? qsort: ");
+    puts("Сортировка таблицы ключей qsort: ");
     print_result(start_qsort_2, end_qsort_2);
 
 
-    printf("\n%lu ?????? ??????? ?????? (? ??????)", sizeof(*keys) * size);
-    printf("\n%lu ?????? ??????? (? ??????)\n\n", sizeof(*students) * size);
+    printf("\n%lu Размер массива ключей (в байтах)", sizeof(*keys) * size);
+    printf("\n%lu Размер таблицы (в байтах)\n\n", sizeof(*students) * size);
     return EXIT_SUCCESS;
 }
