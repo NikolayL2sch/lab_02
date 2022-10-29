@@ -1,31 +1,6 @@
-Tanya
-0
-18
-88
-2017
-0
-Bolshaya Lubyanka
-19
-77
-
-Dong
-1
-23
-100
-2018
-1
-335
-19
-
-Amanda
-0
-55
-85
-1975
-0
-Druzhby Street
-4
-44
+Tanya 0 18 88 2017 0 Bolshaya 19 77
+Dong 1 23 100 2018 1 335 19
+Amanda 0 55 85 1975 0 Druzhby 4 44
 
 Nikola
 1

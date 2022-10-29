@@ -3,24 +3,14 @@
 
 #include "struct.h"
 
-int read_from_file(FILE *f, const struct Student *stud, int *size, struct Key *keys);
-void clear_table(struct StudentTable *tbl);
-int save_table_into_file(FILE *f, struct StudentTable *tbl);
-void print_students_into_file(FILE *f, struct Student stud);
-int add_to_table(struct StudentTable *tbl, const struct Student *stud);
-int remove_from_table(struct StudentTable *tbl, int i);
-int cmp_stud(const void *a, const void *b);
-void sort_stud_table(struct StudentTable *tbl);
-void output_stTable_console(struct StudentTable *tbl);
-int create_key_table(struct StudentTable* arr_stud, struct KeyTable* arr_keys);
-int cmp_key(const void *key1, const void  *key2);
-void sort_key_table(struct KeyTable *arr_keys);
-void print_key_table(const struct KeyTable* arr_keys);
-int print_stud_table_by_key(const struct StudentTable* arr_stud, const struct KeyTable* arr_keys);
-void search(struct StudentTable *tbl);
-void clear_key_table(struct KeyTable* arr_keys);
-void output_student_console(struct Student stud);
-struct Student *input_student_file(FILE *f);
-int input_student(struct Student *stud);
+int read_from_file(FILE *f, student_t *students, int *size, key_t *keys);
+int add_student(student_t *students, int *size, key_t *keys);
+void swap_students(student_t *students, int i, int j);
+void swap_keys(key_t *keys, int i, int j);
+void del_by_id(student_t *students, key_t *keys, int size, int id);
+int delete_by_grade(student_t *students, int *size, key_t *keys);
+void print_student(student_t student);
+int search(table_t table);
+
 
 #endif

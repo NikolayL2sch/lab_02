@@ -25,5 +25,7 @@
 #define MAX_YEAR 2022
 #define MALLOC_STEP 10
 #define MAX_STREET_LEN 20
+#define MAX_SIZE 100
+#define GHZ 3500000000
 
 #endif //_CONSTANTS_H

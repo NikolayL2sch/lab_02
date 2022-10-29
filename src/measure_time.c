@@ -4,141 +4,156 @@
 #define ITERATIONS 100
 #define FILE_NAME_LEN 30
 
-unsigned long long tick(void)
+void bubble_sort_students(student_t *students, int size)
 {
-    unsigned long long d;
-    __asm__ __volatile__ ("rdtsc" : "=a"(d));
-    return d;
-}
-
-void swap_students(struct Student *a, struct Student *b)
-{
-    struct Student tmp = *a;
-    *a = *b;
-    *b = tmp;
-}
-
-
-void mysort_stud(struct Student *base, int nitems)
-{
-    struct Student *pb = (struct Student *)base;
-    struct Student *pe = pb + nitems;
-
-    for (int i = 0; i < nitems; i++)
+    for (int i = 0; i < size - 1; i++)
     {
-        for (int j = 0; j < (pe - pb) - 1; j++)
-            if (cmp_stud((void*)(pb + j), (void*)(pb + j+1)) >= 0)
+        for (int j = 0; j < size- i - 1; j++)
+        {
+            if (students[j].admission_year > students[j + 1].admission_year)
+                swap_students(students, j, j + 1);
+        }
+    }
+}
+
+int bubble_table(table_t table)
+{
+    student_t *students = table.ptr_first;
+
+    if (table.size == 0)
+        return DATA_EMPTY_ERR;
+
+    bubble_sort_students(students, table.size);
+}
+
+void bubble_sort_keys(key_t *keys, int size)
+{
+    for (int i = 0; i < size - 1; i++)
+    {
+        for (int j = 0; j < size - i - 1; j++)
+        {
+            if (keys[j].key > keys[j + 1].key)
             {
-                swap_students((pb + j), (pb + j+1));
+                swap_keys(keys, j, j + 1);
             }
-        pe--;
+        }
     }
 }
 
-void swap_keys(struct Key *a, struct Key *b)
+int bubble_table_keys(table_t table)
 {
-    struct Key tmp = *a;
-    *a = *b;
-    *b = tmp;
+    key_t *keys = table.keys;
+
+    if (table.size == 0)
+        return DATA_EMPTY_ERR;
+
+    bubble_sort_keys(keys, table.size);
 }
 
-void mysort_keys(struct Key *base, size_t nitems)
+int comparator_table(const void *val1, const void *val2)
 {
-    struct Key *pb = (struct Key *)base;
-    struct Key *pe = pb + nitems;
-
-    for (int i = 0; i < nitems; i++)
-    {
-        for (int j = 0; j < (pe - pb) - 1; j++)
-            if (cmp_key((void*)(pb + j), (void*)(pb + j+1)) >= 0)
-            {
-                swap_keys((pb + j), (pb + j+1));
-            }
-        pe--;
-    }
+    return ((student_t*)(val1))->admission_year - ((student_t*)(val2))->admission_year;
 }
 
-void measure_sorting_time()
+int qsort_table(table_t table)
 {
-    char str[MAX_FILENAME_LEN];
-    struct StudentTable tmp_table = {NULL, 0, 0};
-    struct KeyTable tmp_key_table = {NULL, 0};
-    unsigned long long tm, tms;
-
-    printf("ֲגוהטעו טלÿ פאיכא: ");
-    file_input(str);
-
-    FILE *in = fopen(str, "r");
-
-    if (load_table(in, &tmp_table) == 0)
-        printf("\nSuccessfully loaded\n");
-    else
-    {
-        printf("\nCan't load\n");
-        return;
-    }
-    printf("\n                   Table           Keys\n\n");
-
-    printf("QSORT   :");
-    //qsort table
-    tms = 0;
-    for (int i = 0; i < ITERATIONS; i++)
-    {
-        tm = tick();
-        sort_stud_table(&tmp_table);
-        tm = tick() - tm;
-        tms += tm;
-        in = fopen(str, "r");
-        load_table(in, &tmp_table);
-        fclose(in);
-    }
-    printf("%15lld", tms/ITERATIONS);
-
-    //qsort table
-    tms = 0;
-
-    for (int i = 0; i < ITERATIONS; i++)
-    {
-        create_key_table(&tmp_table, &tmp_key_table);
-        tm = tick();
-        sort_key_table(&tmp_key_table);
-        tm = tick() - tm;
-        tms += tm;
-    }
-    printf("%15lld", tms/ITERATIONS);
-
-    printf("\nMYSORT  :");
-    // mysort table
-    tms = 0;
-
-    for (int i = 0; i < ITERATIONS; i++)
-    {
-        tm = tick();
-        mysort_stud(tmp_table.ptr_first, tmp_table.size);
-        tm = tick() - tm;
-        tms += tm;
-        in = fopen(str, "r");
-        load_table(in, &tmp_table);
-        fclose(in);
-    }
-    printf("%15lld", tms/ITERATIONS);
-
-    // mysort key
-    tms = 0;
-
-    for (int i = 0; i < ITERATIONS; i++)
-    {
-        create_key_table(&tmp_table, &tmp_key_table);
-        tm = tick();
-        mysort_keys(tmp_key_table.ptr_first, tmp_key_table.n);
-        tm = tick() - tm;
-        tms += tm;
-    }
-
-    printf("%15lld\n", tms/ITERATIONS);
-
-    printf("\nSIZE    : %14lu B", sizeof(struct Student) * tmp_table.size);
-    printf("%13lu B\n", sizeof(struct Key) * tmp_key_table.n);
-    fclose(in);
+    if (table.size == 0)
+        return DATA_EMPTY_ERR;
+    
+    qsort(table.ptr_first, table.size, sizeof(student_t), comparator_table);
 }
 
+int comparator_keys(const void *val1, const void *val2)
+{
+    return ((key_t*)(val1))->key - ((key_t*)(val2))->key;
+}
+
+int qsort_keys(table_t table)
+{
+    if (table.size == 0)
+        return DATA_EMPTY_ERR;
+    qsort(table.keys, table.size, sizeof(key_t), comparator_keys);
+}
+
+unsigned long long tick_count(void)
+{
+    unsigned long high, low;
+    __asm__ __volatile__ (
+        "rdtsc\n"
+        "movl %%edx, %0\n"
+        "movl %%eax, %1\n"
+        : "=r" (high), "=r" (low)
+        :: "%rax", "%rbx", "%rcx", "%rdx"
+        );
+
+    unsigned long long ticks = ((unsigned long long)high << 32) | low;
+
+    return ticks;
+}
+
+void print_result(unsigned long long start, unsigned long long end)
+{
+    printf("\n %ld ??????, %.10lf ??????\n\n", end - start, (double)(end - start)/GHZ);
+}
+
+int compare_sorts(FILE *f)
+{
+    unsigned long long start_bubble_1, end_bubble_1, start_bubble_2, end_bubble_2, start_qsort_1, end_qsort_1, start_qsort_2, end_qsort_2; 
+    system("clear");
+    student_t students[MAX_SIZE];
+    int size = 0;
+    key_t keys[MAX_SIZE];
+
+    int rc = 0;
+
+    rc = read_from_file(f, students, &size, keys);
+    if (rc)
+        return INCORRECT_DATA;
+    
+    printf("\n\n?????????? ????? ?? %d ???????\n\n", size);
+    puts("-------------------------------------------------------------------------");
+
+    start_bubble_1 = tick_count();
+    bubble_sort_students(students, size);
+    end_bubble_1 = tick_count();
+    puts("?????????? ??????? ?????????: ");
+    print_result(start_bubble_1, end_bubble_1);
+    puts("-------------------------------------------------------------------------");
+    size = 0;
+    rc = read_from_file(f, students, &size, keys);
+    if (rc)
+        return INCORRECT_DATA;
+    
+    start_bubble_2 = tick_count();
+    bubble_sort_keys(keys, size);
+    end_bubble_2 = tick_count();
+    puts("?????????? ??????? ?????? ?????????: ");
+    print_result(start_bubble_2, end_bubble_2);
+
+    size = 0;
+    puts("-------------------------------------------------------------------------");
+    rc = read_file(f, students, &size, keys);
+    if (rc)
+        return INCORRECT_DATA;
+    
+    start_qsort_1 = tick_count();
+    qsort(students, size, sizeof(student_t), comparator_table);
+    end_qsort_1 = tick_count();
+
+    puts("?????????? ??????? qsort: ");
+    print_result(start_qsort_1, end_qsort_1);
+    size = 0;
+    puts("-------------------------------------------------------------------------");
+
+    rc = read_file(f, students, &size, keys);
+    start_qsort_2 = tick_count();
+    qsort(keys, size, sizeof(key_t), comparator_keys);
+    end_qsort_2 = tick_count();
+    puts("?????????? ??????? ?????? qsort: ");
+    print_result(start_qsort_2, end_qsort_2);
+
+
+    printf("\n%lu ?????? ??????? ?????? (? ??????)", sizeof(*keys) * size);
+    printf("\n%lu ?????? ??????? (? ??????)\n\n", sizeof(*students) * size);
+    return EXIT_SUCCESS;
+}
