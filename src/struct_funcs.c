@@ -4,24 +4,29 @@
 
 int read_from_file(FILE *f, student_t *students, int *size, key_t *keys)
 {
-    system("clear");
-    
     int stud_cnt = *size;
     int rc = 0;
     while(!feof(f))
     {
-    	rc = fscanf(f, "%100s %d %d %d %d %d", students[stud_cnt].name, &students[stud_cnt].sex, &students[stud_cnt].age, &students[stud_cnt].average_grade, &students[stud_cnt].admission_year, &students[stud_cnt].house_type);
+    	rc = fscanf(f, "%s %d %d %d %d %d", students[stud_cnt].name, &students[stud_cnt].sex, &students[stud_cnt].age, &students[stud_cnt].average_grade, &students[stud_cnt].admission_year, &students[stud_cnt].house_type);
     	keys[stud_cnt].id = stud_cnt;
-        keys[stud_cnt].key = students[stud_cnt].average_grade;
+        keys[stud_cnt].key = students[stud_cnt].admission_year;
     	if (rc != 6)
+    	{
+    		printf("student incorrect\n");
+    		//printf("%d", stud_cnt);
+    		//printf("%d", students[stud_cnt].age);
     		return INCORRECT_DATA;
-
+		}
         if (students[stud_cnt].house_type == 0)
         {
             home_adress_t adress;
             rc = fscanf(f, "%s %d %d", adress.street, &adress.house_num, &adress.flat_num);
             if (rc != 3)
+            {
+            	printf("\nadress incorrect\n");
                 return INCORRECT_DATA;
+            }
             students[stud_cnt].home_adress.home_adress = adress;
 
         }
@@ -30,26 +35,26 @@ int read_from_file(FILE *f, student_t *students, int *size, key_t *keys)
             obshaga_t obshaga;
             rc = fscanf(f, "%d %d", &obshaga.obshaga_num, &obshaga.room_num);
             if (rc != 2)
+            {
+            	printf("\nobshaga incorrect\n");
                 return INCORRECT_DATA;
+            }
             students[stud_cnt].home_adress.obshaga_adress = obshaga;
             
         }
         else
-        {
-            rc = INCORRECT_DATA;
-            break;
-        }
+            return INCORRECT_DATA;
         stud_cnt++;
         if (stud_cnt > MAX_SIZE)
-        {
-            rc = MEMORY_ERROR;
-            break;
-        }
+            return MEMORY_ERROR;
+        fscanf(f, "\n");
     }
+    //printf("before fseek");
     fseek(f, 0, SEEK_SET);
 
     *size = stud_cnt;
-
+    //printf("%d", *size);
+	//printf("here");
     return EXIT_SUCCESS;
 }
 
@@ -57,11 +62,9 @@ int add_student(student_t *students, int *size, key_t *keys)
 {
     student_t new_student;
     system("clear");
-    int rc = 0;
 
-    printf("Введите имя студента: ");
-    rc = string_field_input(new_student.name);
-    if (rc)
+    printf("Введите имя студента: \n");
+    if (scanf("%s", new_student.name) != 1)
         return INCORRECT_DATA;
     
     printf("Введите пол студента (0 - женский, 1 - мужской): ");
@@ -100,9 +103,8 @@ int add_student(student_t *students, int *size, key_t *keys)
     }
     else if (new_student.house_type == 0)
     {
-        printf("Введите имя улицы: ");
-        rc = string_field_input(new_student.home_adress.home_adress.street);
-        if (rc)
+        printf("Введите имя улицы: \n");
+        if (scanf("%s", new_student.home_adress.home_adress.street) != 1)
             return INCORRECT_DATA;
         
         printf("Введите номер дома (от 1 до 100): ");
@@ -119,13 +121,13 @@ int add_student(student_t *students, int *size, key_t *keys)
         return INCORRECT_DATA;
     
     *size += 1;
-
+	
     if (*size > MAX_SIZE)
         return MEMORY_ERROR;
 
-    keys[*size - 1].key = new_student.average_grade;
+    keys[*size - 1].key = new_student.admission_year;
     keys[*size - 1].id = *size - 1;
-
+	
     students[*size - 1] = new_student;
 
     return EXIT_SUCCESS;
@@ -174,15 +176,15 @@ int delete_by_grade(student_t *students, int *size, key_t *keys)
     if (*size == 0)
         return DATA_EMPTY_ERR;
 
-    puts("Введите значение средней оценки: ");
-    int avg_grade_to_del;
-    rc = scanf("%d", &avg_grade_to_del);
-    if (rc != 1 || avg_grade_to_del < 0 || avg_grade_to_del > 100)
+    puts("Введите значение года поступления: ");
+    int admission_year;
+    rc = scanf("%d", &admission_year);
+    if (rc != 1 || admission_year < 1800 || admission_year > 2022)
         return INCORRECT_DATA;
     
     for (int student = 0; student < students_cnt; student++)
     {
-        if (students[student].average_grade == avg_grade_to_del)
+        if (students[student].admission_year == admission_year)
         {
             del_by_id(students, keys, *size, student);
             *size -= 1;
@@ -190,21 +192,21 @@ int delete_by_grade(student_t *students, int *size, key_t *keys)
     }
 
     if (*size == students_cnt)
-        printf("\nСтуденты с таким средним баллом не найдены.\n");
+        printf("\nСтуденты с таким годом поступления не найдены.\n");
     else
-        printf("\nСтуденты с таким средним баллом успешно удалены.\n");
+        printf("\nСтуденты с таким годом поступления успешно удалены.\n");
 
     return EXIT_SUCCESS;
 }
 
 void print_student(student_t student)
 {
-    printf("%-20s | %7d | %6d | %6d |  %5d | %5d |", student.name, student.sex, student.age, student.average_grade, student.admission_year, student.house_type);
+    printf("%-10s | %3d | %7d | %16d |  %15d | %10d |", student.name, student.sex, student.age, student.average_grade, student.admission_year, student.house_type);
 
     if (student.house_type == 1)
         printf(" %18d | %7d |       --      |  -- |     --   \n", student.home_adress.obshaga_adress.obshaga_num, student.home_adress.obshaga_adress.room_num);
     else if (student.house_type == 0)
-        printf("         --         |    --   | %14s | %3d | %8d", student.home_adress.home_adress.street, student.home_adress.home_adress.house_num, student.home_adress.home_adress.flat_num);
+        printf("         --         |    --   | %13s | %3d | %8d\n", student.home_adress.home_adress.street, student.home_adress.home_adress.house_num, student.home_adress.home_adress.flat_num);
 }
 
 int search(table_t table)
@@ -228,9 +230,9 @@ int search(table_t table)
         {
             if (flag == 0)
             {
-                puts("\n\n    Имя   | Пол | Возраст |  Средняя оценка  |  Год поступления | Тип жилища |  Номер общежития   | Комната |     Улица     | Дом | Квартира");
+                puts("\n\n    Имя    | Пол | Возраст |  Средняя оценка  |  Год поступления | Тип жилища |  Номер общежития   | Комната |     Улица     | Дом | Квартира");
 
-                puts("--------------------------------------------------------------------------------------------------------------");
+                puts("-------------------------------------------------------------------------------------------------------------------------------------------------------");
             }
 
             print_student(table.ptr_first[table.keys[student].id]);
@@ -246,22 +248,25 @@ int search(table_t table)
 }
 
 int print_table(table_t table)
-{
-    system("clear"); 
+{ 
     int size = table.size;
     if (table.size == 0)
+    {
+    	printf("Table Empty");
+    	printf("%d", table.size);
         return DATA_EMPTY_ERR;
-
+	}
     student_t *students = table.ptr_first;
 
-    puts("    Имя   | Пол | Возраст |  Средняя оценка  |  Год поступления | Тип жилища |  Номер общежития   | Комната |     Улица     | Дом | Квартира");
+    puts("    Имя    | Пол | Возраст |  Средняя оценка  |  Год поступления | Тип жилища |  Номер общежития   | Комната |     Улица     | Дом | Квартира");
 
-    puts("--------------------------------------------------------------------------------------------------------------");
+    puts("-------------------------------------------------------------------------------------------------------------------------------------------------------");
 
     for (int student = 0; student < size; student++)
     {
         print_student(students[student]);
     }
+    return EXIT_SUCCESS;
 }
 
 int print_keys(table_t table)
@@ -275,8 +280,9 @@ int print_keys(table_t table)
     puts("    Таблица ключей");
     for (int key = 0; key < size; key++)
     {
-        printf("Номер: %3d  | Средняя оценка: %9d  \n", keys[key].id, keys[key].key);
+        printf("Номер: %3d  | Год поступления: %9d  \n", keys[key].id, keys[key].key);
     }
+    return EXIT_SUCCESS;
 }
 
 int print_table_by_keys(table_t table)
@@ -285,11 +291,12 @@ int print_table_by_keys(table_t table)
     if (table.size == 0)
         return INCORRECT_DATA;
 
-    puts("    Имя   | Пол | Возраст |  Средняя оценка  |  Год поступления | Тип жилища |  Номер общежития   | Комната |     Улица     | Дом | Квартира");
+    puts("    Имя    | Пол | Возраст |  Средняя оценка  |  Год поступления | Тип жилища |  Номер общежития   | Комната |     Улица     | Дом | Квартира");
 
-    puts("--------------------------------------------------------------------------------------------------------------");
+    puts("-------------------------------------------------------------------------------------------------------------------------------------------------------");
     for (int student = 0; student < table.size; student++)
     {
         print_student(table.ptr_first[table.keys[student].id]);
     }
+    return EXIT_SUCCESS;
 }
