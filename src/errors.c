@@ -8,7 +8,7 @@ void print_error(int rc)
             printf("\nОШИБКА! Введенно неправильное значение.");
             break;
         case DATA_EMPTY_ERR:
-            printf("\nОШИБКА! Пропущено значение или записано - ;;");
+            printf("\nОШИБКА! Данные пусты!");
             break;
         case FILE_NOT_FOUND:
             printf("\nОШИБКА! ФАЙЛ не найден");
