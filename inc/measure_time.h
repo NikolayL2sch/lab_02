@@ -14,10 +14,8 @@ int comparator_table(const void *val1, const void *val2);
 int qsort_table(table_t table);
 int comparator_keys(const void *val1, const void *val2);
 int qsort_keys(table_t table);
-
-void swap_students(struct Student *a, struct Student *b);
-void mysort_stud(struct Student *base, int nitems);
-void swap_keys(struct Key *a, struct Key *b);
-void mysort_keys(struct Key *base, size_t nitems);
+unsigned long long tick_count(void);
+void print_result(unsigned long long start, unsigned long long end);
+int compare_sorts(FILE *f);
 
 #endif // SORT_H
