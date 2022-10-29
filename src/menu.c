@@ -9,7 +9,7 @@ void print_menu(void)
 	printf("\nМеню взаимодействия:\n\t"
         "1 - Загрузить данные из файла\n\t"
         "2 - Добавить запись\n\t"
-        "3 - Удалить студентов по значению средней оценки\n\t"
+        "3 - Удалить студентов по значению года поступления\n\t"
         "4 - Вывести список студентов, указанного года поступления, живущих в общежитии\n\t"
         "5 - Отсортировать таблицу студентов (bubble)\n\t"
         "6 - Отсортировать таблицу ключей (bubble)\n\t"
@@ -87,7 +87,7 @@ int menu()
     	{
         	int size = table.size;
 	
-        	rc = delete_by_grade(students, &size, keys);
+        	rc = delete_by_year(students, &size, keys);
 	
         	if (rc)
         	{
@@ -110,7 +110,6 @@ int menu()
     	}
     	else if (choice == 5)
     	{
-        	system("clear");
         	rc = bubble_table(table);
         	if (rc)
         	{
@@ -121,7 +120,6 @@ int menu()
     	}
     	else if (choice == 6)
     	{
-        	system("clear");
         	rc = bubble_table_keys(table);
         	if (rc)
         	{
@@ -132,7 +130,6 @@ int menu()
     	}
     	else if (choice == 7)
     	{
-        	system("clear");
         	rc = qsort_table(table);
         	if (rc)
         	{
@@ -143,7 +140,6 @@ int menu()
     	}
     	else if (choice == 8)
     	{
-        	system("clear");
         	rc = qsort_keys(table);
         	if (rc)
         	{
@@ -201,7 +197,6 @@ int menu()
     	}
     	else if (choice == 13)
     	{
-        	system("clear");
         	table.size = 0;
         	puts("Таблица успешно очищена\n");
     	}
