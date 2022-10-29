@@ -79,9 +79,9 @@ int qsort_keys(table_t table)
     return EXIT_SUCCESS;
 }
 
-unsigned long long tick_count(void)
+uint64_t tick_count(void)
 {
-    unsigned long high, low;
+    uint64_t high, low;
     __asm__ __volatile__ (
         "rdtsc\n"
         "movq %%rdx, %0\n"
@@ -90,20 +90,20 @@ unsigned long long tick_count(void)
         :: "%rax", "%rbx", "%rcx", "%rdx"
         );
 
-    unsigned long long ticks = ((unsigned long long)high << 32) | low;
+    uint64_t ticks = ((uint64_t)high << 32) | low;
 
     return ticks;
 }
 
-void print_result(unsigned long long start, unsigned long long end)
+void print_result(uint64_t start, uint64_t end)
 {
-    printf("\n %llu тактов, %.10lf секунд\n\n", end - start, (double)(end - start)/GHZ);
+    printf("\n %d tacts, ", (int) (end - start));
+	printf("%.10lf seconds\n\n", (double)(end - start)/GHZ); 
 }
 
 int compare_sorts(FILE *f)
 {
     unsigned long long start_bubble_1, end_bubble_1, start_bubble_2, end_bubble_2, start_qsort_1, end_qsort_1, start_qsort_2, end_qsort_2; 
-    system("clear");
     student_t students[MAX_SIZE];
     int size = 0;
     key_t keys[MAX_SIZE];
@@ -157,7 +157,7 @@ int compare_sorts(FILE *f)
     print_result(start_qsort_2, end_qsort_2);
 
 
-    printf("\n%lu Размер массива ключей (в байтах)", sizeof(*keys) * size);
-    printf("\n%lu Размер таблицы (в байтах)\n\n", sizeof(*students) * size);
+    printf("\n%d Keys array (in bytes)", (int) (sizeof(*keys) * size));
+    printf("\n%d Students table size(in bytes)\n\n", (int) (sizeof(*students) * size));
     return EXIT_SUCCESS;
 }
