@@ -1,0 +1,1000 @@
+Nikolay 0 34 74 1981 0 Rusakovskaya 48 459 
+Dima 0 33 2 1992 1 17 99 
+Max 0 32 25 1982 1 27 601 
+Ilya 0 32 40 2020 1 2 165 
+Umed 0 30 17 2003 0 Grazhdan 26 949 
+Danil 1 28 37 1998 0 Rusakovskaya 49 154 
+Anya 1 19 29 2002 1 96 806 
+Nikita 1 34 93 2022 0 Izmailovskaya 78 682 
+Nikita 1 35 5 2021 1 48 6 
+Ilya 0 32 99 1992 1 97 722 
+Gosha 1 24 76 2010 1 15 866 
+Nikita 0 35 25 2020 0 Baumanskaya 93 966 
+Nikolay 1 33 54 1992 0 Baumanskaya 17 629 
+Vlad 1 34 19 2006 1 32 674 
+Max 1 33 39 1987 0 Krondstadt 6 12 
+Masha 1 20 76 2005 1 46 954 
+Max 1 27 95 1971 0 Krondstadt 5 387 
+Nikolay 1 27 53 1988 1 35 1 
+Anya 1 20 93 2003 1 56 707 
+Artem 0 19 19 2000 0 Prostornaya 96 745 
+Umed 0 28 2 2000 1 8 525 
+Gosha 0 35 18 2022 0 Izmailovskaya 12 977 
+Umed 1 24 72 1982 1 48 434 
+Artem 1 35 21 2016 1 49 682 
+Andrey 0 34 13 2009 0 Bolshaya 85 98 
+Danil 1 26 49 2021 1 80 955 
+Vlad 0 19 24 1980 0 Krondstadt 78 530 
+Andrey 0 32 44 2017 1 68 337 
+Umed 1 35 67 2014 1 94 826 
+Nikita 1 21 14 1974 1 23 512 
+Anya 0 25 76 1978 0 Grazhdan 73 549 
+Anya 1 24 61 1982 1 25 824 
+Vlad 0 31 24 1990 0 Krondstadt 49 24 
+Vlad 1 22 11 2012 1 33 471 
+Nikita 1 28 45 2000 0 Grazhdan 60 169 
+Nikita 1 35 37 2012 0 Umnaya 26 850 
+Anya 1 28 75 1989 0 Moskovskaya 84 296 
+Artem 1 26 99 2015 1 49 535 
+Danil 0 34 10 2011 0 Grazhdan 40 94 
+Masha 0 23 69 2000 1 29 616 
+Vlad 0 28 61 1999 1 28 228 
+Masha 0 19 38 1986 0 Krasnoselskaya 53 548 
+Gosha 1 19 67 1986 0 Umnaya 70 524 
+Andrey 0 34 80 2005 0 Moskovskaya 81 316 
+Artem 0 27 24 2010 0 Moskovskaya 66 44 
+Dima 1 27 26 1972 1 28 243 
+Vlad 1 26 83 2001 0 Izmailovskaya 58 78 
+Vlad 1 34 37 1999 1 37 878 
+Masha 0 29 68 2011 0 Bolshaya 35 382 
+Gosha 0 21 61 2001 1 85 113 
+Nikolay 0 31 46 2013 0 Bolshaya 38 134 
+Umed 0 22 32 1987 1 68 224 
+Max 0 18 86 2011 1 63 184 
+Andrey 1 28 42 1975 1 84 610 
+Ilya 0 29 17 1973 1 92 276 
+Ilya 0 19 64 2001 1 66 270 
+Max 1 24 65 1989 0 Izmailovskaya 46 546 
+Gosha 0 19 98 1974 0 Rusakovskaya 9 713 
+Dima 0 34 34 2022 1 13 761 
+Nikolay 0 19 3 1980 0 Baumanskaya 7 791 
+Danil 0 20 83 2006 1 8 144 
+Masha 1 20 2 2010 1 44 822 
+Max 1 18 57 2008 1 46 935 
+Nikita 1 19 34 1988 0 Grazhdan 95 222 
+Umed 0 32 22 1978 1 93 359 
+Ilya 1 19 54 1984 1 87 269 
+Nikita 1 23 74 1995 0 Krondstadt 84 948 
+Vlad 0 18 17 1983 0 Umnaya 29 881 
+Andrey 0 22 12 1991 0 Bolshaya 13 41 
+Gosha 1 28 3 2017 1 47 816 
+Max 1 35 30 1989 1 92 705 
+Artem 0 25 61 1996 1 20 738 
+Danil 1 25 83 1969 0 Umnaya 76 832 
+Max 0 35 69 1980 0 Bolshaya 49 831 
+Ilya 1 31 59 1996 0 Prostornaya 8 244 
+Danil 0 35 82 1998 0 Krasivaya 66 27 
+Gosha 0 26 82 2022 0 Krondstadt 67 826 
+Max 1 34 35 1972 1 59 373 
+Ilya 0 34 51 2012 1 79 322 
+Danil 0 33 20 1974 1 30 726 
+Vlad 0 29 17 2010 1 13 154 
+Gosha 0 33 83 1975 0 Moskovskaya 45 885 
+Max 0 28 24 1991 0 Krasivaya 72 942 
+Gosha 1 27 59 1970 1 83 934 
+Andrey 1 24 30 2000 0 Prostornaya 90 698 
+Vlad 1 19 74 1981 1 19 471 
+Anya 1 26 74 2008 0 Krondstadt 65 211 
+Vlad 1 25 39 2019 1 73 111 
+Masha 1 23 37 1971 0 Krondstadt 59 621 
+Nikolay 1 28 52 1992 0 Izmailovskaya 43 678 
+Anya 1 31 0 2000 1 62 527 
+Ilya 0 33 34 2002 0 Krondstadt 34 115 
+Danil 1 35 83 1991 1 74 812 
+Umed 0 35 90 2003 1 59 286 
+Ilya 0 26 0 1990 0 Umnaya 79 291 
+Artem 1 21 25 2009 1 26 669 
+Anya 0 32 78 1969 0 Grazhdan 31 258 
+Danil 0 30 83 1969 0 Moskovskaya 4 763 
+Anya 1 28 70 2005 1 58 369 
+Gosha 0 32 84 2021 0 Grazhdan 71 949 
+Dima 0 18 39 1979 0 Grazhdan 72 668 
+Masha 1 18 91 1969 0 Rusakovskaya 100 563 
+Nikita 0 30 78 2021 1 26 951 
+Vlad 1 29 69 1983 0 Krondstadt 18 657 
+Nikolay 1 26 27 2004 1 38 372 
+Ilya 1 19 34 2020 1 69 4 
+Umed 1 20 57 1985 0 Grazhdan 86 726 
+Gosha 1 25 73 2008 0 Izmailovskaya 18 616 
+Dima 0 25 44 1969 0 Moskovskaya 87 446 
+Nikolay 0 20 13 2014 1 26 165 
+Vlad 0 18 5 2022 0 Grazhdan 18 390 
+Vlad 0 34 48 2017 0 Moskovskaya 61 183 
+Nikita 1 24 56 2009 0 Rusakovskaya 2 15 
+Dima 0 27 55 1975 0 Krasivaya 68 212 
+Umed 0 32 48 1983 1 98 392 
+Gosha 1 35 88 1976 0 Moskovskaya 87 959 
+Ilya 1 23 38 1989 1 58 980 
+Nikolay 0 23 84 1972 0 Rusakovskaya 42 668 
+Anya 1 31 71 1984 0 Grazhdan 95 784 
+Gosha 0 33 89 1977 0 Rusakovskaya 10 709 
+Andrey 1 35 29 1994 1 75 332 
+Anya 0 27 37 1980 0 Moskovskaya 82 104 
+Vlad 0 34 99 2000 0 Krasnoselskaya 80 618 
+Danil 1 28 83 1992 1 93 586 
+Ilya 1 27 43 1982 1 99 161 
+Danil 0 32 86 1974 0 Grazhdan 75 689 
+Artem 0 29 99 2011 1 64 223 
+Dima 0 20 5 1978 1 68 953 
+Nikita 1 28 97 1982 0 Prostornaya 92 36 
+Ilya 1 27 4 2022 1 59 228 
+Dima 1 23 91 1973 0 Baumanskaya 34 526 
+Nikita 1 21 30 1977 0 Moskovskaya 7 475 
+Nikolay 1 21 83 1992 0 Umnaya 39 607 
+Nikolay 0 20 90 1981 0 Krondstadt 34 916 
+Gosha 1 21 42 1985 0 Umnaya 25 935 
+Vlad 0 24 57 1979 1 63 516 
+Nikolay 1 32 56 1976 1 38 591 
+Nikolay 0 33 25 1998 1 99 725 
+Gosha 1 31 92 2007 1 14 543 
+Umed 1 28 27 1980 1 63 409 
+Anya 0 18 0 1972 1 22 422 
+Nikolay 0 30 54 1995 0 Moskovskaya 83 323 
+Nikita 1 21 36 2006 0 Grazhdan 36 76 
+Danil 1 21 38 1971 1 72 936 
+Danil 1 35 48 1979 1 22 875 
+Danil 1 27 64 2003 0 Moskovskaya 13 245 
+Max 1 33 31 1993 1 53 909 
+Danil 0 27 46 1991 1 46 307 
+Masha 1 28 27 1988 1 100 218 
+Artem 1 28 2 1977 0 Umnaya 40 599 
+Gosha 1 31 38 2014 1 70 895 
+Nikolay 1 27 15 1992 1 67 559 
+Anya 1 30 60 2021 0 Grazhdan 27 157 
+Masha 1 21 15 1977 0 Krondstadt 1 185 
+Dima 1 34 40 1992 0 Grazhdan 60 922 
+Max 1 32 96 2007 1 91 664 
+Max 0 27 71 2006 0 Krasnoselskaya 58 431 
+Gosha 1 19 44 1997 1 27 341 
+Ilya 0 29 36 2020 1 90 388 
+Vlad 0 20 100 1999 1 69 522 
+Umed 0 19 36 2014 1 1 737 
+Umed 0 33 29 2020 1 75 700 
+Dima 0 18 42 2017 1 7 679 
+Umed 0 26 90 1995 0 Krondstadt 77 401 
+Vlad 1 28 10 1984 1 96 888 
+Gosha 0 24 11 2016 1 43 113 
+Max 1 26 12 1993 0 Krasnoselskaya 87 299 
+Anya 1 22 13 1981 0 Grazhdan 50 518 
+Vlad 0 22 92 1975 1 10 30 
+Andrey 1 32 57 2017 1 66 1000 
+Andrey 0 31 73 1978 1 61 420 
+Artem 1 21 34 2000 1 31 981 
+Dima 1 21 82 2005 1 46 28 
+Gosha 1 26 84 2011 1 46 458 
+Ilya 1 20 0 1977 0 Rusakovskaya 41 444 
+Danil 1 33 79 2001 1 13 781 
+Masha 1 32 43 1978 1 52 78 
+Max 0 30 87 1981 0 Krasivaya 87 241 
+Dima 1 34 77 2018 0 Moskovskaya 45 695 
+Anya 0 29 2 2005 1 96 435 
+Nikita 0 20 12 2009 0 Izmailovskaya 9 844 
+Vlad 1 26 60 1984 0 Izmailovskaya 45 986 
+Gosha 1 28 33 1997 1 80 800 
+Umed 0 34 62 2005 0 Rusakovskaya 45 372 
+Nikolay 0 26 15 1990 0 Bolshaya 47 634 
+Dima 1 26 43 2022 0 Bolshaya 36 362 
+Dima 1 22 56 2022 0 Prostornaya 63 918 
+Nikita 0 34 99 2014 1 42 950 
+Andrey 0 31 23 2016 0 Krasnoselskaya 70 769 
+Nikita 1 21 46 1994 1 7 500 
+Artem 1 30 71 1971 1 36 781 
+Gosha 1 28 80 2008 0 Krasnoselskaya 92 487 
+Umed 0 29 89 1975 1 49 61 
+Anya 0 29 20 1989 1 4 494 
+Artem 0 25 61 2017 1 26 827 
+Andrey 1 21 66 2001 0 Krasivaya 13 112 
+Anya 1 19 85 2010 1 86 584 
+Danil 1 30 86 1971 0 Krondstadt 21 815 
+Max 1 33 58 1986 1 61 258 
+Ilya 1 27 27 1990 1 91 314 
+Masha 1 21 50 1969 1 19 628 
+Dima 0 23 79 2020 0 Krondstadt 77 753 
+Dima 1 35 21 2017 1 59 12 
+Ilya 1 19 66 2018 0 Baumanskaya 1 332 
+Vlad 0 28 32 2011 1 61 918 
+Artem 0 24 89 2002 0 Moskovskaya 25 280 
+Masha 0 28 71 1986 1 46 694 
+Umed 1 32 47 2012 0 Izmailovskaya 30 132 
+Max 0 33 83 1973 0 Krasnoselskaya 9 662 
+Danil 1 25 71 1988 1 67 796 
+Masha 1 28 97 2017 1 54 975 
+Max 1 22 84 1990 1 47 921 
+Artem 1 19 27 2020 1 47 214 
+Umed 1 34 81 1986 0 Prostornaya 74 225 
+Nikita 1 26 90 2016 1 15 586 
+Andrey 0 23 16 1987 0 Moskovskaya 17 690 
+Max 1 33 70 2002 1 15 514 
+Gosha 1 20 17 1976 1 1 74 
+Max 1 31 46 2014 0 Baumanskaya 98 139 
+Anya 0 28 40 1997 1 69 315 
+Umed 1 31 82 1973 0 Moskovskaya 76 272 
+Max 0 18 91 2015 1 52 673 
+Anya 1 32 1 2005 0 Moskovskaya 16 465 
+Dima 1 32 49 2020 0 Umnaya 50 956 
+Andrey 0 20 100 2019 0 Moskovskaya 1 326 
+Nikolay 1 29 17 1993 1 46 958 
+Danil 1 33 39 1997 0 Krasnoselskaya 71 973 
+Masha 1 20 81 2006 0 Prostornaya 76 314 
+Andrey 0 21 29 1969 1 23 610 
+Nikita 0 31 11 1974 0 Moskovskaya 92 861 
+Artem 1 35 22 2003 0 Baumanskaya 48 980 
+Ilya 1 19 22 2009 0 Bolshaya 15 373 
+Gosha 0 21 31 2021 1 6 597 
+Anya 1 25 2 2002 0 Krasivaya 89 537 
+Vlad 1 33 74 1997 1 54 579 
+Anya 0 22 7 2008 1 23 79 
+Ilya 1 34 45 1974 0 Rusakovskaya 95 719 
+Vlad 1 19 55 2006 1 62 310 
+Ilya 1 20 18 1972 1 15 375 
+Max 0 29 100 1992 1 32 389 
+Umed 1 24 31 2017 1 79 794 
+Nikita 0 23 65 1990 1 42 5 
+Ilya 1 20 40 1974 1 54 5 
+Dima 1 28 86 1984 1 46 475 
+Max 1 19 17 2019 1 15 221 
+Nikolay 1 25 24 2018 0 Krasnoselskaya 7 396 
+Vlad 1 20 22 1981 0 Baumanskaya 67 991 
+Nikolay 0 34 85 1980 1 62 804 
+Andrey 1 35 28 1980 0 Baumanskaya 55 915 
+Danil 1 26 27 2019 1 83 775 
+Dima 1 32 88 2021 0 Krondstadt 72 828 
+Masha 1 29 13 2002 1 1 15 
+Andrey 1 35 80 1997 1 22 941 
+Ilya 1 20 16 1997 0 Grazhdan 45 969 
+Nikita 1 26 58 1980 1 87 69 
+Ilya 1 33 66 2005 1 9 341 
+Nikita 1 25 36 1986 0 Krasivaya 52 167 
+Vlad 1 32 55 2001 1 91 904 
+Nikolay 0 19 17 2011 1 60 463 
+Umed 1 28 29 1997 0 Izmailovskaya 97 652 
+Umed 0 22 89 1969 0 Grazhdan 17 264 
+Max 0 26 39 2001 1 91 641 
+Anya 1 18 35 2016 1 59 338 
+Masha 0 18 11 2002 0 Krondstadt 29 747 
+Nikita 1 22 17 2010 0 Umnaya 13 588 
+Andrey 0 34 73 2004 0 Grazhdan 69 907 
+Umed 1 20 15 2010 1 84 385 
+Dima 1 34 1 1979 0 Krasnoselskaya 25 942 
+Anya 0 30 65 1969 0 Bolshaya 24 568 
+Ilya 0 32 51 1985 0 Bolshaya 18 83 
+Max 1 30 78 1999 1 53 651 
+Umed 1 27 39 1976 1 20 687 
+Ilya 1 25 11 1973 0 Baumanskaya 69 388 
+Andrey 0 25 61 2006 0 Baumanskaya 50 231 
+Vlad 0 25 60 1974 1 21 359 
+Gosha 0 33 35 2015 1 92 238 
+Gosha 0 29 23 2002 1 52 456 
+Masha 0 33 29 2011 0 Prostornaya 38 545 
+Nikolay 0 22 75 2013 1 60 976 
+Artem 1 29 32 1975 0 Krondstadt 80 751 
+Andrey 0 30 45 2022 1 78 716 
+Anya 1 28 9 1975 1 48 614 
+Masha 0 22 31 1976 1 42 129 
+Umed 0 33 34 2005 1 26 47 
+Vlad 0 32 7 2016 0 Umnaya 24 512 
+Ilya 0 25 15 2007 1 24 291 
+Nikita 1 22 9 2016 0 Krondstadt 72 373 
+Nikita 0 34 40 2003 1 77 693 
+Nikolay 0 22 40 2004 0 Umnaya 57 77 
+Max 0 23 14 1994 0 Grazhdan 85 756 
+Dima 0 20 39 1975 1 60 223 
+Umed 1 26 73 2001 0 Izmailovskaya 42 906 
+Danil 1 31 80 1999 0 Prostornaya 59 469 
+Masha 1 24 30 2015 0 Umnaya 63 552 
+Max 0 24 60 2000 0 Baumanskaya 15 332 
+Max 1 30 40 2004 0 Grazhdan 10 996 
+Nikolay 1 33 28 2004 0 Baumanskaya 52 351 
+Max 1 24 36 2017 1 23 227 
+Gosha 0 32 2 2018 0 Krasivaya 100 388 
+Vlad 0 25 17 1974 1 41 761 
+Masha 1 27 81 1985 0 Krasnoselskaya 26 921 
+Max 0 35 38 2010 1 94 421 
+Anya 1 23 48 1993 1 74 29 
+Artem 0 29 72 1972 0 Rusakovskaya 32 386 
+Max 0 34 73 2013 1 84 403 
+Dima 0 19 68 1990 1 13 167 
+Dima 1 22 80 2015 1 1 504 
+Vlad 1 30 52 1994 1 19 69 
+Nikita 1 28 59 1973 0 Grazhdan 86 346 
+Nikita 1 19 81 1992 0 Krasnoselskaya 16 443 
+Gosha 0 20 97 2007 1 95 468 
+Dima 0 18 37 2014 0 Krasnoselskaya 92 186 
+Umed 1 26 36 2011 1 10 168 
+Dima 0 31 0 1991 1 20 14 
+Artem 0 31 54 2000 1 18 888 
+Vlad 1 28 82 1997 0 Rusakovskaya 19 461 
+Dima 1 28 3 1990 0 Izmailovskaya 98 670 
+Masha 1 21 3 2013 0 Prostornaya 26 579 
+Vlad 1 27 4 1970 0 Umnaya 5 66 
+Dima 0 21 82 1995 0 Izmailovskaya 2 509 
+Max 0 27 60 1969 1 70 985 
+Artem 0 33 8 1994 0 Moskovskaya 62 931 
+Anya 1 19 45 2001 1 90 719 
+Max 0 24 94 1991 1 39 419 
+Masha 1 26 22 1988 1 26 988 
+Nikolay 0 27 75 1977 1 25 344 
+Max 1 31 6 2013 1 57 335 
+Vlad 1 25 31 1970 1 44 639 
+Gosha 1 26 56 1998 1 88 474 
+Ilya 0 35 5 1991 0 Bolshaya 100 298 
+Vlad 0 25 72 1977 0 Prostornaya 75 939 
+Anya 0 33 68 1991 0 Krondstadt 27 558 
+Dima 1 27 93 1988 1 20 285 
+Umed 0 20 91 1969 1 19 981 
+Gosha 1 33 56 1987 0 Prostornaya 4 96 
+Dima 1 29 49 2020 0 Bolshaya 60 394 
+Ilya 1 21 38 2006 1 62 327 
+Umed 1 25 54 1986 0 Rusakovskaya 94 521 
+Andrey 0 28 17 2009 1 28 391 
+Danil 1 18 29 1975 1 19 103 
+Max 1 30 55 2007 0 Krasnoselskaya 70 92 
+Vlad 1 27 31 1988 0 Rusakovskaya 60 696 
+Artem 1 27 1 1969 0 Umnaya 98 624 
+Umed 0 34 40 1973 1 79 771 
+Max 0 18 30 1986 1 46 291 
+Gosha 0 32 46 1970 0 Krasnoselskaya 66 238 
+Dima 0 34 38 1986 1 70 996 
+Masha 1 27 7 2008 0 Grazhdan 92 333 
+Anya 0 28 49 1992 0 Bolshaya 21 220 
+Anya 0 18 4 1984 0 Izmailovskaya 44 791 
+Artem 0 24 15 2006 0 Prostornaya 99 707 
+Ilya 0 20 30 1996 0 Baumanskaya 7 215 
+Gosha 0 33 23 2009 1 46 945 
+Danil 0 35 81 1994 1 53 226 
+Nikita 1 34 65 2000 0 Krondstadt 97 794 
+Vlad 1 18 55 2002 0 Izmailovskaya 26 59 
+Nikolay 0 26 56 2022 1 74 947 
+Nikolay 1 29 71 1996 1 2 375 
+Gosha 0 24 21 1970 0 Baumanskaya 18 679 
+Andrey 0 19 61 1988 0 Baumanskaya 40 546 
+Dima 1 35 28 1981 1 63 127 
+Danil 1 35 66 1978 1 43 16 
+Artem 1 19 19 1986 1 37 233 
+Nikita 1 25 58 2021 1 46 728 
+Dima 0 30 2 2004 1 78 510 
+Masha 1 23 23 1990 0 Bolshaya 69 23 
+Andrey 1 29 64 1977 0 Krondstadt 87 914 
+Masha 0 31 35 2007 0 Krasivaya 69 484 
+Gosha 1 34 21 1995 0 Rusakovskaya 70 499 
+Nikolay 0 29 88 1969 1 96 874 
+Anya 0 28 62 1992 1 49 154 
+Artem 0 20 16 2002 0 Krasnoselskaya 20 272 
+Danil 0 34 13 1972 1 56 878 
+Artem 1 26 96 2017 1 6 869 
+Vlad 1 33 44 1990 1 84 237 
+Masha 1 20 42 2009 1 8 556 
+Max 0 19 98 2016 1 77 50 
+Nikolay 1 35 46 2004 0 Prostornaya 57 309 
+Anya 0 25 25 1986 1 1 974 
+Masha 1 20 44 2010 0 Izmailovskaya 18 222 
+Gosha 0 23 26 2005 0 Grazhdan 23 965 
+Anya 1 28 85 1992 0 Umnaya 63 717 
+Vlad 1 24 41 2001 1 55 252 
+Masha 1 21 64 1997 1 31 647 
+Danil 1 34 91 1997 0 Prostornaya 37 989 
+Dima 0 29 94 2007 1 72 581 
+Andrey 1 21 8 1978 1 59 643 
+Nikolay 0 18 45 1990 0 Izmailovskaya 6 700 
+Danil 1 21 95 2018 1 81 86 
+Masha 1 21 28 2017 0 Bolshaya 17 161 
+Nikita 0 20 67 2006 1 36 727 
+Nikolay 0 34 88 1972 0 Prostornaya 42 625 
+Max 0 29 50 1970 1 27 461 
+Danil 1 18 6 2009 0 Krasivaya 37 990 
+Umed 0 34 46 2011 0 Umnaya 40 467 
+Ilya 0 35 47 2018 0 Krasivaya 35 790 
+Nikolay 0 29 37 2008 0 Krasnoselskaya 79 278 
+Artem 1 30 75 2010 1 74 785 
+Nikolay 1 25 100 1976 0 Grazhdan 83 291 
+Anya 0 25 92 1985 1 94 933 
+Max 0 27 67 1991 1 23 325 
+Umed 0 32 36 1969 0 Prostornaya 9 733 
+Masha 0 21 81 2021 1 75 212 
+Masha 0 27 18 2004 0 Prostornaya 36 735 
+Masha 0 29 65 1978 1 86 449 
+Nikita 0 32 85 1973 0 Prostornaya 70 597 
+Anya 0 32 86 1983 0 Umnaya 8 674 
+Nikolay 1 25 5 2022 1 93 231 
+Masha 1 18 79 1969 1 26 907 
+Ilya 1 26 83 2001 1 49 51 
+Danil 0 30 88 1978 0 Moskovskaya 57 989 
+Artem 1 23 79 1987 0 Rusakovskaya 94 409 
+Umed 1 22 91 1998 0 Krasivaya 8 693 
+Masha 1 21 23 2003 1 79 370 
+Ilya 1 21 35 2006 0 Krasivaya 21 111 
+Nikita 0 29 93 2011 0 Moskovskaya 42 328 
+Nikolay 1 32 49 1970 1 36 82 
+Danil 0 30 97 1978 1 10 902 
+Ilya 0 26 61 2005 1 5 528 
+Anya 1 18 10 1994 1 86 554 
+Anya 0 27 73 2004 0 Umnaya 21 127 
+Umed 0 35 6 2006 1 36 990 
+Andrey 0 33 38 2009 0 Grazhdan 36 873 
+Artem 1 26 9 1969 1 74 849 
+Masha 1 18 37 2007 1 91 477 
+Nikita 1 32 80 1971 0 Krasnoselskaya 57 309 
+Dima 0 31 19 1990 1 14 124 
+Vlad 1 34 71 1983 0 Moskovskaya 42 985 
+Andrey 0 31 17 1985 0 Grazhdan 22 706 
+Masha 0 20 91 2004 1 29 58 
+Masha 1 27 68 1978 1 89 301 
+Masha 0 33 33 2005 1 47 690 
+Ilya 0 29 0 1990 1 31 437 
+Nikolay 0 34 29 2005 0 Baumanskaya 82 735 
+Umed 0 26 64 1976 0 Krondstadt 19 440 
+Gosha 1 35 40 2006 0 Prostornaya 34 66 
+Vlad 0 18 70 1996 1 100 411 
+Max 0 20 50 2015 1 13 783 
+Dima 0 32 23 1986 1 27 803 
+Ilya 1 34 15 2015 0 Rusakovskaya 31 768 
+Nikita 0 26 87 1999 1 96 610 
+Ilya 1 20 34 2009 0 Grazhdan 82 750 
+Max 1 20 62 2001 1 12 433 
+Andrey 1 35 84 2000 1 73 273 
+Umed 1 30 17 1999 1 88 793 
+Anya 1 22 49 1993 1 91 943 
+Gosha 0 32 71 1976 1 3 181 
+Dima 0 32 19 2003 0 Grazhdan 65 680 
+Masha 1 32 81 1994 0 Rusakovskaya 25 925 
+Andrey 0 18 10 1980 1 50 956 
+Max 1 22 63 2013 1 20 236 
+Masha 1 20 52 1999 0 Moskovskaya 63 822 
+Ilya 0 25 4 1974 0 Izmailovskaya 10 496 
+Ilya 1 21 18 2003 0 Umnaya 54 783 
+Gosha 1 24 87 1979 0 Prostornaya 50 518 
+Umed 1 29 14 1981 0 Bolshaya 33 499 
+Nikolay 1 21 60 1985 1 6 473 
+Nikolay 1 22 100 2017 1 85 903 
+Andrey 0 34 61 2007 1 19 476 
+Anya 1 30 9 1996 1 43 547 
+Vlad 1 21 36 1982 0 Baumanskaya 82 43 
+Masha 0 19 13 2014 0 Grazhdan 33 669 
+Artem 0 26 58 1994 1 59 445 
+Dima 0 27 46 1969 1 81 475 
+Max 0 28 51 1988 1 84 197 
+Gosha 1 22 89 2008 0 Krasnoselskaya 30 321 
+Andrey 0 27 23 2010 0 Moskovskaya 86 379 
+Danil 0 26 61 1980 1 46 658 
+Masha 1 32 19 1974 1 18 603 
+Gosha 0 20 9 1984 1 4 802 
+Umed 1 18 53 1976 0 Krasivaya 84 432 
+Max 1 25 74 1984 0 Bolshaya 94 797 
+Anya 0 24 68 1982 1 52 908 
+Umed 0 23 18 1991 1 38 908 
+Nikolay 1 19 72 2007 1 6 802 
+Artem 0 19 32 1976 1 63 869 
+Masha 0 25 25 1980 1 8 513 
+Nikita 0 20 93 2018 0 Krasnoselskaya 4 515 
+Dima 1 24 75 1976 1 65 162 
+Gosha 1 22 89 1983 0 Krondstadt 10 870 
+Anya 1 18 90 2014 0 Krondstadt 65 162 
+Gosha 0 32 100 2012 0 Krasivaya 97 892 
+Danil 0 34 52 2001 1 4 436 
+Andrey 0 30 75 2005 1 77 592 
+Gosha 0 30 19 1996 0 Grazhdan 36 495 
+Vlad 0 29 6 1973 1 69 848 
+Dima 0 33 35 1995 1 32 66 
+Nikita 1 35 51 1996 0 Umnaya 46 627 
+Ilya 0 25 47 1979 1 77 594 
+Anya 0 30 76 1993 1 100 857 
+Max 0 31 4 2002 1 48 907 
+Max 0 35 89 1978 1 46 915 
+Max 1 31 91 1999 0 Grazhdan 33 674 
+Umed 0 26 10 2019 0 Prostornaya 67 408 
+Andrey 1 33 30 2008 0 Prostornaya 22 962 
+Andrey 0 34 76 1974 1 72 233 
+Gosha 1 29 98 1998 0 Bolshaya 76 283 
+Andrey 1 19 12 2016 0 Bolshaya 89 836 
+Nikolay 0 33 100 1989 1 12 162 
+Max 0 30 72 1979 0 Moskovskaya 34 296 
+Ilya 1 19 59 2008 1 69 511 
+Gosha 0 30 76 1986 0 Baumanskaya 72 841 
+Nikolay 0 34 45 2013 1 2 484 
+Masha 1 29 61 1995 0 Krasivaya 30 598 
+Andrey 0 18 62 1999 1 44 706 
+Artem 0 27 77 2018 1 48 405 
+Anya 1 31 1 2008 0 Prostornaya 34 448 
+Dima 1 31 19 2020 0 Baumanskaya 40 833 
+Vlad 1 18 36 1976 1 61 966 
+Ilya 0 26 97 1982 1 81 747 
+Max 0 25 48 2006 0 Krondstadt 55 955 
+Andrey 1 28 91 2017 1 96 362 
+Vlad 1 22 86 2004 1 63 723 
+Andrey 1 25 45 2018 1 20 558 
+Dima 1 29 21 1989 1 12 641 
+Ilya 0 27 11 1996 1 10 808 
+Danil 0 32 22 1983 1 4 229 
+Nikolay 0 33 89 2002 1 29 143 
+Andrey 1 27 26 2021 0 Grazhdan 84 795 
+Artem 0 32 72 2000 1 92 106 
+Artem 1 21 55 1987 0 Umnaya 44 826 
+Gosha 0 35 23 2010 0 Bolshaya 42 121 
+Ilya 1 35 96 1993 0 Grazhdan 94 925 
+Nikita 1 31 86 2000 1 34 35 
+Vlad 1 18 88 1988 0 Grazhdan 36 505 
+Andrey 0 21 32 1983 0 Grazhdan 61 264 
+Ilya 1 34 53 2005 0 Umnaya 45 146 
+Nikita 1 27 37 2001 1 61 844 
+Andrey 0 28 91 1988 0 Rusakovskaya 41 993 
+Nikolay 1 33 66 1992 0 Umnaya 89 867 
+Max 0 31 16 1972 1 82 590 
+Dima 1 19 95 2000 0 Prostornaya 90 558 
+Andrey 1 27 67 1972 1 28 664 
+Dima 1 35 35 2013 0 Umnaya 43 364 
+Danil 0 19 65 2014 1 98 594 
+Artem 0 28 67 2005 0 Moskovskaya 24 563 
+Artem 0 19 36 1988 1 78 164 
+Anya 1 20 95 2022 1 57 454 
+Artem 1 20 6 1977 0 Bolshaya 82 961 
+Max 1 19 49 1999 1 71 752 
+Vlad 1 20 34 1990 1 74 827 
+Umed 1 25 54 1970 0 Prostornaya 76 837 
+Vlad 0 19 75 1998 0 Krondstadt 44 192 
+Umed 0 29 55 2000 1 3 698 
+Max 1 18 99 1982 1 61 896 
+Nikita 1 19 85 1969 1 59 632 
+Masha 1 18 32 1983 0 Umnaya 19 250 
+Gosha 1 28 85 1972 1 84 736 
+Umed 1 33 84 1988 1 53 933 
+Nikita 1 29 2 1981 1 13 639 
+Umed 0 28 74 2011 1 79 767 
+Max 1 18 24 2009 1 60 357 
+Gosha 1 29 12 1976 0 Bolshaya 63 341 
+Anya 1 33 78 2009 0 Bolshaya 48 691 
+Ilya 0 33 28 2014 0 Krasivaya 9 350 
+Nikita 0 34 1 1979 0 Bolshaya 48 943 
+Nikolay 1 24 11 2019 0 Prostornaya 93 791 
+Danil 1 28 100 1976 1 74 787 
+Danil 1 35 47 2010 1 55 586 
+Gosha 1 25 59 1998 0 Krondstadt 42 364 
+Andrey 0 32 13 1987 0 Moskovskaya 77 916 
+Max 1 35 71 1994 1 4 533 
+Ilya 1 20 87 1989 1 14 154 
+Nikolay 1 19 59 2021 1 84 307 
+Ilya 0 20 13 2016 0 Krasnoselskaya 70 710 
+Ilya 1 19 64 1995 0 Krasivaya 15 611 
+Danil 0 30 89 1970 1 28 875 
+Dima 0 22 24 2019 1 62 185 
+Max 0 20 97 2003 0 Baumanskaya 27 540 
+Gosha 1 19 44 1999 0 Prostornaya 31 662 
+Masha 0 25 38 1989 1 100 771 
+Anya 0 22 6 1980 0 Bolshaya 85 432 
+Gosha 1 29 62 1973 0 Krasnoselskaya 80 99 
+Umed 1 29 61 2002 0 Baumanskaya 29 67 
+Vlad 0 27 52 1989 1 77 622 
+Umed 0 28 18 1976 1 76 28 
+Artem 0 28 33 1983 0 Baumanskaya 56 732 
+Umed 0 19 18 2004 1 92 890 
+Anya 1 20 97 1972 0 Krasivaya 72 603 
+Nikolay 1 21 10 2006 0 Bolshaya 69 222 
+Nikita 0 27 38 2005 1 35 11 
+Ilya 0 24 21 1980 1 95 2 
+Nikolay 0 19 63 1979 0 Baumanskaya 10 106 
+Artem 0 30 13 2011 1 57 236 
+Andrey 1 28 61 1973 1 11 925 
+Umed 1 25 19 1984 0 Umnaya 69 497 
+Nikolay 0 24 65 1982 0 Krondstadt 46 712 
+Masha 1 19 91 1975 1 3 931 
+Dima 1 31 75 1980 1 10 368 
+Nikita 1 32 74 1999 0 Prostornaya 53 379 
+Ilya 0 34 4 2016 1 28 476 
+Nikita 0 19 94 2012 0 Bolshaya 77 186 
+Danil 0 19 39 1986 1 79 533 
+Nikita 0 32 77 1996 1 98 917 
+Anya 1 20 87 2013 0 Krasnoselskaya 83 259 
+Ilya 1 20 24 1981 1 11 377 
+Gosha 0 21 36 1970 0 Krasivaya 45 914 
+Masha 0 18 51 1990 0 Moskovskaya 64 317 
+Vlad 1 20 79 2010 1 66 854 
+Ilya 1 21 93 1998 0 Krondstadt 72 773 
+Ilya 1 28 89 1983 1 61 753 
+Danil 0 31 69 1979 1 36 648 
+Danil 1 29 43 1990 1 66 573 
+Nikita 0 22 55 1992 0 Krasivaya 10 490 
+Nikolay 0 23 58 1996 0 Prostornaya 53 23 
+Dima 0 34 57 2007 1 5 940 
+Andrey 1 30 89 1996 0 Krasnoselskaya 43 417 
+Dima 0 22 30 1971 1 53 886 
+Danil 0 33 45 1997 0 Krasivaya 90 490 
+Nikita 0 30 11 2021 1 79 315 
+Dima 1 28 92 2003 1 80 884 
+Vlad 0 33 17 1972 0 Rusakovskaya 65 993 
+Andrey 1 28 19 1971 1 37 972 
+Max 0 32 18 2017 1 17 199 
+Gosha 0 34 9 2014 1 42 916 
+Gosha 1 33 54 1982 0 Krasivaya 73 980 
+Vlad 1 24 13 2010 0 Krasivaya 31 638 
+Anya 1 21 19 2014 0 Grazhdan 34 631 
+Gosha 1 21 83 2019 0 Moskovskaya 69 37 
+Ilya 0 35 5 1999 1 39 900 
+Gosha 1 26 20 1992 0 Moskovskaya 4 91 
+Nikita 1 21 17 1985 1 60 921 
+Gosha 1 32 10 2020 0 Bolshaya 52 716 
+Vlad 1 24 42 1976 1 71 115 
+Danil 1 23 44 1981 0 Grazhdan 92 778 
+Gosha 1 34 13 1979 1 9 236 
+Danil 0 30 49 1997 0 Krasnoselskaya 34 193 
+Nikolay 0 31 11 1989 1 90 966 
+Vlad 1 21 3 2017 0 Grazhdan 24 853 
+Nikolay 0 29 67 1990 0 Rusakovskaya 12 408 
+Masha 0 23 88 1977 1 42 810 
+Max 0 20 72 2020 1 93 474 
+Andrey 1 32 97 1987 0 Krasivaya 78 217 
+Umed 0 20 3 1992 0 Grazhdan 73 770 
+Max 0 31 14 1976 0 Krasnoselskaya 8 244 
+Danil 0 29 28 2014 0 Krondstadt 47 877 
+Gosha 1 31 53 1996 1 66 688 
+Andrey 1 28 13 1978 1 86 116 
+Gosha 0 35 73 1996 1 81 858 
+Artem 0 34 3 1984 0 Prostornaya 85 226 
+Dima 0 19 56 1979 0 Umnaya 69 317 
+Dima 1 27 46 1989 1 84 188 
+Nikita 0 24 67 1981 0 Izmailovskaya 9 743 
+Nikolay 1 31 12 1996 0 Prostornaya 81 820 
+Artem 1 19 90 1995 1 15 603 
+Ilya 1 31 25 1982 1 20 398 
+Umed 1 24 37 1969 1 83 935 
+Gosha 0 22 34 1998 1 2 382 
+Gosha 1 28 5 1977 1 39 515 
+Dima 1 18 52 2017 1 97 696 
+Anya 0 18 57 2010 0 Krondstadt 9 166 
+Nikolay 0 35 83 1971 1 35 37 
+Umed 1 32 44 2005 1 12 209 
+Dima 0 33 29 1977 1 73 702 
+Ilya 0 25 49 2002 0 Krasnoselskaya 73 325 
+Masha 1 30 94 1975 0 Umnaya 31 457 
+Nikolay 0 32 68 2020 1 86 61 
+Anya 0 26 89 2022 1 8 245 
+Nikita 1 28 16 1970 0 Izmailovskaya 23 851 
+Nikolay 0 30 37 1976 0 Izmailovskaya 65 280 
+Danil 0 29 40 1972 0 Bolshaya 58 976 
+Nikita 0 19 10 1986 1 84 292 
+Andrey 1 22 69 1999 1 21 150 
+Danil 0 23 70 2014 1 80 777 
+Gosha 1 24 23 2020 1 28 495 
+Umed 1 30 25 1990 0 Izmailovskaya 73 585 
+Artem 1 20 65 2009 0 Umnaya 43 654 
+Max 1 29 12 2006 1 15 503 
+Ilya 1 22 94 1977 1 80 413 
+Anya 1 27 70 2018 0 Krasnoselskaya 5 315 
+Max 0 19 48 1973 1 31 911 
+Artem 1 18 16 2000 0 Prostornaya 75 68 
+Ilya 1 20 87 1994 0 Krasivaya 43 310 
+Andrey 1 21 46 2004 1 31 349 
+Anya 1 33 49 1997 1 64 944 
+Danil 1 27 6 1979 1 27 690 
+Nikita 0 33 89 1991 1 34 604 
+Anya 1 24 36 2011 0 Krasnoselskaya 36 131 
+Artem 1 27 5 2004 1 9 138 
+Artem 1 20 60 2015 1 63 825 
+Artem 1 19 3 1997 1 50 13 
+Anya 0 21 73 1976 1 85 653 
+Artem 1 33 73 2022 1 65 63 
+Danil 1 19 14 1975 0 Rusakovskaya 91 195 
+Gosha 1 33 89 1972 0 Krasnoselskaya 89 668 
+Nikolay 0 33 60 2015 1 25 777 
+Dima 1 28 13 2018 0 Grazhdan 26 424 
+Umed 0 20 5 2020 1 87 375 
+Gosha 1 22 12 2004 1 1 446 
+Danil 0 25 98 2007 0 Baumanskaya 15 86 
+Nikita 1 23 10 1972 1 22 786 
+Masha 0 32 0 1988 1 28 217 
+Ilya 0 31 41 1996 0 Krondstadt 97 628 
+Masha 0 26 95 1991 0 Prostornaya 98 416 
+Nikita 1 18 82 2008 0 Baumanskaya 19 967 
+Danil 0 20 30 2017 1 27 770 
+Umed 1 32 59 1974 0 Bolshaya 96 831 
+Dima 1 29 89 1973 1 2 172 
+Anya 0 22 19 2004 1 54 248 
+Nikita 1 33 79 1991 1 94 549 
+Umed 0 25 0 1974 1 38 162 
+Masha 0 23 53 1982 0 Moskovskaya 31 303 
+Ilya 1 35 4 1972 0 Izmailovskaya 19 232 
+Masha 0 21 58 2012 1 39 366 
+Nikita 0 35 41 2000 0 Izmailovskaya 85 363 
+Gosha 0 26 24 1986 0 Rusakovskaya 18 923 
+Nikita 1 35 44 1998 0 Krasnoselskaya 7 868 
+Danil 0 26 72 1996 1 71 893 
+Masha 1 31 85 1992 0 Krasivaya 83 276 
+Vlad 0 29 36 1990 0 Krasivaya 17 497 
+Ilya 1 20 80 1980 0 Baumanskaya 25 934 
+Ilya 1 18 51 1975 0 Baumanskaya 24 49 
+Artem 0 22 43 1985 0 Krasnoselskaya 69 943 
+Gosha 1 33 24 2007 1 48 973 
+Gosha 0 25 20 1985 1 8 486 
+Max 0 21 4 2017 1 24 816 
+Vlad 0 32 56 2019 0 Krasivaya 10 662 
+Dima 1 28 70 1969 1 51 427 
+Danil 0 25 46 2009 1 29 725 
+Masha 0 32 15 1977 0 Baumanskaya 34 115 
+Artem 1 33 19 1969 1 15 227 
+Gosha 0 31 9 1998 1 35 526 
+Artem 0 35 19 2001 1 34 180 
+Max 1 19 46 1969 0 Moskovskaya 20 21 
+Danil 1 29 39 2022 0 Moskovskaya 52 329 
+Masha 0 25 24 1990 0 Krondstadt 41 405 
+Nikolay 1 21 64 1982 0 Krondstadt 3 794 
+Umed 1 23 56 2006 1 28 244 
+Vlad 1 22 48 1998 0 Umnaya 78 541 
+Gosha 1 32 27 1991 0 Moskovskaya 72 107 
+Ilya 0 34 97 1973 1 47 770 
+Masha 0 27 22 2003 0 Krondstadt 75 337 
+Danil 1 23 35 1998 1 44 542 
+Anya 1 23 57 1978 0 Grazhdan 36 674 
+Umed 1 27 11 2000 1 78 164 
+Ilya 0 33 95 2020 1 30 273 
+Nikita 1 22 100 1975 0 Krasivaya 75 613 
+Nikolay 1 30 57 1999 0 Izmailovskaya 76 385 
+Ilya 0 19 83 1983 1 50 223 
+Anya 0 28 25 1979 1 27 994 
+Danil 0 33 97 2012 1 39 695 
+Artem 0 25 47 1982 0 Umnaya 32 746 
+Danil 1 22 5 2013 0 Umnaya 16 611 
+Anya 1 35 18 2018 0 Bolshaya 9 408 
+Andrey 0 28 74 1973 1 36 117 
+Andrey 1 25 78 1991 1 51 964 
+Andrey 1 20 71 1970 0 Bolshaya 56 927 
+Vlad 1 34 78 1975 0 Umnaya 21 903 
+Max 0 20 69 2018 1 93 15 
+Dima 1 29 69 2010 1 5 310 
+Umed 1 24 3 1989 1 26 558 
+Anya 1 33 33 1973 1 43 778 
+Nikolay 0 21 82 2002 0 Bolshaya 29 169 
+Umed 1 24 60 1975 0 Izmailovskaya 79 334 
+Masha 0 29 79 2012 0 Bolshaya 43 668 
+Nikolay 1 34 30 1971 0 Umnaya 87 953 
+Andrey 1 34 67 2012 0 Krasivaya 58 237 
+Dima 0 25 56 1981 1 28 839 
+Gosha 0 25 91 2010 1 40 227 
+Anya 0 31 80 1990 0 Umnaya 79 459 
+Anya 0 33 57 2012 0 Bolshaya 10 27 
+Vlad 1 19 68 2015 0 Baumanskaya 75 617 
+Masha 0 20 57 2014 0 Rusakovskaya 86 857 
+Max 1 22 59 1981 0 Rusakovskaya 52 296 
+Dima 0 23 67 1999 1 26 805 
+Gosha 1 22 13 1985 0 Umnaya 90 126 
+Nikita 0 31 14 2004 1 25 840 
+Danil 1 22 62 1972 0 Krondstadt 32 149 
+Max 1 23 46 1971 1 22 352 
+Nikita 0 22 95 1974 1 96 167 
+Nikolay 1 24 21 1982 1 46 301 
+Max 0 28 9 2022 1 12 204 
+Nikita 1 20 28 1975 1 43 176 
+Umed 0 18 3 1995 1 100 993 
+Nikita 0 31 11 1998 1 75 689 
+Nikolay 0 32 63 2005 0 Moskovskaya 96 400 
+Andrey 1 19 11 2009 1 56 3 
+Andrey 0 32 38 2002 1 24 179 
+Nikolay 1 20 43 2010 0 Umnaya 53 888 
+Nikolay 0 20 81 1979 0 Izmailovskaya 80 598 
+Masha 1 23 25 2013 1 37 262 
+Nikita 0 29 57 2011 0 Grazhdan 52 778 
+Umed 1 26 83 2005 1 12 948 
+Nikita 0 26 64 2015 1 39 753 
+Andrey 0 35 0 1980 0 Baumanskaya 92 441 
+Ilya 0 30 33 2011 1 36 32 
+Andrey 0 34 36 1974 1 28 626 
+Vlad 0 35 70 1980 1 70 22 
+Anya 1 27 66 2012 0 Baumanskaya 70 531 
+Nikita 1 33 92 1974 0 Izmailovskaya 82 516 
+Nikita 1 31 70 1970 0 Baumanskaya 99 145 
+Nikita 0 32 21 1998 1 14 446 
+Masha 0 25 61 1982 0 Moskovskaya 95 962 
+Masha 0 32 9 1977 0 Krasnoselskaya 7 588 
+Nikita 1 29 51 1978 1 5 325 
+Andrey 1 24 69 2000 0 Bolshaya 57 967 
+Gosha 1 18 35 1994 0 Krasnoselskaya 79 380 
+Ilya 1 18 54 1988 0 Prostornaya 81 684 
+Dima 0 22 53 1987 0 Krondstadt 24 255 
+Vlad 0 29 17 2008 1 87 179 
+Vlad 1 22 54 1988 0 Bolshaya 62 894 
+Umed 0 21 29 1973 1 58 990 
+Danil 1 30 50 2015 0 Izmailovskaya 61 583 
+Nikolay 0 22 72 1978 1 73 731 
+Gosha 0 33 47 2019 1 1 441 
+Ilya 0 19 44 1998 0 Umnaya 37 769 
+Nikolay 0 21 15 1981 0 Bolshaya 97 276 
+Vlad 0 32 61 2011 0 Izmailovskaya 7 164 
+Gosha 0 30 86 2009 0 Moskovskaya 82 834 
+Nikolay 1 26 39 1979 0 Izmailovskaya 6 978 
+Artem 1 28 86 1996 1 60 42 
+Nikita 1 32 30 1978 0 Umnaya 95 239 
+Nikolay 0 28 79 2021 0 Krasnoselskaya 86 843 
+Danil 1 22 52 1974 0 Grazhdan 54 990 
+Masha 0 24 10 2022 1 98 491 
+Vlad 1 29 26 1976 0 Krondstadt 85 850 
+Masha 1 35 35 1977 0 Izmailovskaya 98 1000 
+Danil 0 31 24 1976 0 Baumanskaya 32 134 
+Danil 0 24 2 1987 0 Krasnoselskaya 46 371 
+Ilya 1 23 47 1985 0 Izmailovskaya 96 13 
+Artem 0 21 26 2002 1 13 762 
+Nikolay 1 21 63 1981 0 Umnaya 31 534 
+Artem 0 31 76 1976 0 Umnaya 43 287 
+Nikolay 1 33 37 1973 1 87 205 
+Ilya 0 32 83 1974 0 Umnaya 86 956 
+Gosha 0 23 39 2005 1 15 668 
+Ilya 0 27 93 1992 0 Krasivaya 92 872 
+Danil 0 35 88 1977 0 Krasivaya 16 474 
+Anya 0 23 3 1986 1 15 825 
+Nikita 1 34 76 1998 1 58 786 
+Artem 1 28 73 1993 1 7 435 
+Dima 1 23 1 1973 0 Umnaya 40 284 
+Danil 0 32 49 2002 1 12 282 
+Nikita 1 22 17 2004 0 Krasivaya 39 487 
+Max 0 18 90 1976 0 Bolshaya 12 649 
+Max 0 35 13 1970 1 18 287 
+Anya 0 35 23 2002 0 Moskovskaya 21 748 
+Ilya 1 27 26 2021 1 19 595 
+Andrey 1 24 29 1998 1 77 687 
+Gosha 0 31 0 1971 0 Moskovskaya 37 591 
+Artem 1 29 18 2015 0 Prostornaya 69 205 
+Nikita 0 20 52 1969 0 Krondstadt 21 472 
+Nikita 0 34 0 1985 0 Krasivaya 91 983 
+Artem 0 34 90 2017 0 Krondstadt 59 507 
+Anya 1 29 28 1997 1 92 241 
+Andrey 0 27 95 2011 1 40 32 
+Gosha 1 29 47 1998 1 54 911 
+Anya 1 23 85 1998 0 Prostornaya 43 486 
+Max 0 29 64 1989 0 Bolshaya 37 400 
+Anya 0 23 28 2012 1 45 41 
+Dima 1 28 36 1996 1 39 471 
+Anya 0 29 49 2017 0 Krasnoselskaya 100 801 
+Andrey 1 20 0 1969 0 Krasivaya 38 85 
+Masha 1 21 5 1992 1 94 5 
+Umed 0 27 1 1983 1 58 92 
+Ilya 1 26 65 2003 0 Umnaya 89 361 
+Dima 0 24 50 2014 0 Rusakovskaya 94 256 
+Masha 0 19 59 2012 0 Prostornaya 94 593 
+Danil 1 30 20 1992 0 Bolshaya 82 410 
+Umed 1 25 40 2016 1 38 540 
+Max 0 20 22 1981 1 71 620 
+Umed 0 25 19 1998 0 Bolshaya 76 755 
+Gosha 0 31 60 2001 0 Krondstadt 97 369 
+Max 0 30 41 1971 0 Rusakovskaya 62 463 
+Gosha 1 34 71 2015 1 52 213 
+Gosha 0 27 0 1983 1 54 562 
+Artem 0 19 18 1980 1 83 751 
+Artem 1 29 77 1974 0 Krondstadt 57 279 
+Gosha 0 31 51 2011 0 Izmailovskaya 42 826 
+Gosha 0 25 6 1976 0 Baumanskaya 72 686 
+Dima 1 23 65 2007 0 Krondstadt 71 296 
+Max 0 29 17 1970 0 Krasivaya 37 681 
+Vlad 1 24 48 2014 1 28 595 
+Dima 1 27 81 1992 1 31 980 
+Anya 1 30 56 1990 1 23 155 
+Anya 0 33 78 2004 1 27 23 
+Umed 0 33 61 2019 1 62 982 
+Masha 0 28 98 1970 0 Bolshaya 2 277 
+Masha 1 20 51 1969 0 Prostornaya 69 987 
+Danil 1 33 67 2014 1 24 650 
+Andrey 0 31 45 2001 0 Umnaya 67 597 
+Nikolay 1 28 9 1992 1 66 388 
+Anya 1 22 74 1974 0 Krondstadt 56 148 
+Nikolay 1 35 70 2000 1 44 152 
+Ilya 0 27 19 2008 1 65 365 
+Anya 0 23 89 2004 0 Bolshaya 2 803 
+Danil 0 20 36 1976 1 53 418 
+Artem 1 23 18 2014 1 50 849 
+Vlad 0 27 88 1978 1 11 533 
+Danil 1 22 22 2004 0 Krasivaya 12 72 
+Masha 0 23 86 1978 0 Krasivaya 70 383 
+Masha 0 30 13 2005 0 Krasivaya 34 99 
+Andrey 1 23 95 2016 1 34 425 
+Anya 1 32 45 1999 1 19 811 
+Gosha 0 35 27 1998 0 Krasivaya 66 759 
+Vlad 0 33 41 1978 1 52 422 
+Ilya 0 26 19 2008 0 Umnaya 83 847 
+Nikolay 1 35 90 1988 1 16 163 
+Vlad 1 29 46 2012 0 Krondstadt 2 449 
+Max 1 27 89 1971 1 47 13 
+Nikolay 1 30 32 2021 0 Krondstadt 10 316 
+Danil 0 31 57 1978 1 95 435 
+Andrey 0 27 35 2004 0 Baumanskaya 43 303 
+Artem 0 21 26 1972 1 90 528 
+Dima 0 35 44 1998 0 Umnaya 12 834 
+Gosha 0 27 52 1985 0 Umnaya 42 723 
+Anya 0 29 16 1970 0 Umnaya 84 372 
+Danil 1 27 18 1981 0 Bolshaya 48 452 
+Anya 1 35 34 1992 0 Grazhdan 24 307 
+Danil 0 27 84 1998 1 14 518 
+Ilya 1 33 65 2010 0 Krasnoselskaya 97 553 
+Dima 1 22 10 1984 1 39 350 
+Vlad 1 25 72 1974 1 59 76 
+Umed 0 29 66 1987 1 73 888 
+Nikolay 1 26 6 2017 0 Prostornaya 44 606 
+Vlad 1 20 70 1999 0 Moskovskaya 44 186 
+Nikita 1 19 87 1979 1 91 794 
+Umed 1 25 91 1987 0 Izmailovskaya 68 940 
+Nikolay 1 31 90 2018 0 Umnaya 81 607 
+Vlad 0 31 59 1982 1 92 467 
+Danil 1 25 6 1974 1 5 313 
+Nikolay 0 32 98 2011 0 Krasivaya 55 505 
+Umed 0 24 1 2008 0 Bolshaya 74 717 
+Nikolay 1 22 87 2022 0 Krondstadt 24 260 
+Danil 0 20 44 1974 0 Moskovskaya 53 89 
+Andrey 1 23 64 2014 1 24 110 
+Ilya 1 23 76 2021 1 74 115 
+Max 1 35 77 1988 1 19 90 
+Gosha 1 27 47 2006 1 17 967 
+Gosha 1 21 97 1986 0 Grazhdan 18 147 
+Danil 1 19 59 2003 1 69 749 
+Dima 0 31 91 1980 1 22 599 
+Masha 1 25 48 1983 1 47 552 
+Umed 0 26 25 1987 0 Krondstadt 84 803 
+Masha 0 24 10 1971 0 Grazhdan 28 702 
+Andrey 1 22 77 1980 0 Bolshaya 88 47 
+Andrey 1 25 80 1971 1 13 472 
+Nikolay 1 30 33 1999 0 Rusakovskaya 84 611 
+Max 1 32 26 1973 1 91 541 
+Danil 1 29 96 1974 1 75 796 
+Gosha 0 24 64 2022 0 Rusakovskaya 77 225 
+Andrey 0 30 5 2013 0 Izmailovskaya 19 890 
+Anya 0 21 31 1994 0 Krasnoselskaya 12 530 
+Umed 0 29 10 1981 1 98 681 
+Ilya 0 35 28 2010 0 Rusakovskaya 4 718 
+Ilya 0 27 77 2020 0 Umnaya 17 838 
+Vlad 0 18 71 1993 1 82 936 
+Anya 0 35 39 2006 1 98 809 
+Danil 0 30 77 1986 1 73 219 
+Anya 1 35 45 2006 0 Rusakovskaya 92 212 
+Danil 1 25 80 2013 1 90 46 
+Anya 1 28 67 1999 0 Krondstadt 100 60 
+Nikita 1 29 95 2012 1 26 442 
+Artem 0 32 94 1990 0 Prostornaya 61 379 
+Ilya 0 19 6 2005 0 Baumanskaya 40 617 
+Ilya 0 26 86 2012 1 4 771 
+Anya 1 22 35 1976 1 71 719 
+Artem 1 24 36 2013 1 35 736 
+Danil 1 27 61 2005 0 Krasivaya 7 921 
+Andrey 1 21 27 2017 1 22 59 
+Max 1 23 61 2014 0 Grazhdan 16 425 
+Dima 1 28 27 1978 0 Umnaya 100 783 
+Artem 0 29 2 1990 1 51 17 
+Nikita 1 29 51 1984 0 Krondstadt 65 341 
+Ilya 0 28 64 1994 0 Bolshaya 39 639 
+Anya 0 30 14 1984 1 4 174 
+Max 0 29 100 1979 0 Bolshaya 8 497 
+Artem 0 18 69 1997 1 87 609 
+Nikolay 1 26 52 1980 1 73 538 
+Vlad 0 19 48 2000 1 3 312 
+Umed 1 21 82 2020 0 Krasivaya 73 829 
+Danil 1 34 91 1994 0 Krondstadt 43 580 
+Masha 0 21 97 1992 0 Krasivaya 91 991 
+Max 1 25 51 1977 1 50 347 
+Gosha 1 28 62 1982 0 Baumanskaya 89 509 
+Masha 0 18 2 1974 0 Moskovskaya 71 802 
+Masha 0 25 35 2002 1 2 70 
+Ilya 0 31 35 2021 0 Krasivaya 34 449 
+Artem 1 20 92 1987 0 Baumanskaya 69 187 
+Nikita 0 34 65 1993 0 Rusakovskaya 46 840 
+Ilya 0 28 34 2009 0 Moskovskaya 29 719 
+Nikolay 1 22 28 1981 0 Izmailovskaya 23 458 
+Ilya 1 27 3 1978 0 Krondstadt 30 803 
+Anya 1 26 47 2022 0 Rusakovskaya 6 460 
+Anya 1 27 68 2003 0 Krasnoselskaya 88 510 
+Nikita 1 26 4 2004 0 Prostornaya 36 19 
+Ilya 1 34 42 1970 0 Rusakovskaya 9 801 
+Nikita 0 32 33 1976 1 82 982 
+Vlad 0 18 76 2008 1 49 295 
+Dima 0 26 38 2005 1 26 119 
+Ilya 0 35 83 1978 1 11 38 
+Nikita 0 33 80 1985 1 80 569 
+Gosha 1 34 24 2004 1 27 646 
+Umed 0 33 1 1994 0 Rusakovskaya 12 590 
+Umed 1 28 42 1992 1 71 53 
+Andrey 0 22 52 1973 1 37 398 
+Dima 0 30 84 2022 0 Krondstadt 5 706 
+Danil 1 29 22 1997 0 Grazhdan 18 179 
+Anya 1 34 21 1977 1 26 215 
+Nikolay 0 30 5 2015 1 88 5 
