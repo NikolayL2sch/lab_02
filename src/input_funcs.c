@@ -18,19 +18,3 @@ int file_input(char *filename)
 
     return EXIT_SUCCESS;
 }
-
-int string_field_input(char *str)
-{
-	fflush(stdin);
-    if (!fgets(str, MAX_FIELD_LEN, stdin))
-        return INCORRECT_DATA;
-
-    int len = strlen(str);
-    if (str[len - 1] == '\n')
-        str[--len] = '\0';
-
-    if (len > MAX_FIELD_LEN - 1)
-        return STRING_OVERFLOW;
-
-    return EXIT_SUCCESS;
-}
