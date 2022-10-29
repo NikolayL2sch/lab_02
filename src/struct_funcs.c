@@ -25,6 +25,7 @@ int read_from_file(FILE *f, student_t *students, int *size, key_t *keys)
             if (rc != 3)
             {
             	printf("\nadress incorrect\n");
+				printf("%d", stud_cnt);
                 return INCORRECT_DATA;
             }
             students[stud_cnt].home_adress.home_adress = adress;
@@ -61,7 +62,6 @@ int read_from_file(FILE *f, student_t *students, int *size, key_t *keys)
 int add_student(student_t *students, int *size, key_t *keys)
 {
     student_t new_student;
-    system("clear");
 
     printf("Введите имя студента: \n");
     if (scanf("%s", new_student.name) != 1)
@@ -166,12 +166,10 @@ void del_by_id(student_t *students, key_t *keys, int size, int id)
     }
 }
 
-int delete_by_grade(student_t *students, int *size, key_t *keys)
+int delete_by_year(student_t *students, int *size, key_t *keys)
 {
     int rc = 0;
     int students_cnt = *size;
-
-    system("clear");
 
     if (*size == 0)
         return DATA_EMPTY_ERR;
@@ -180,8 +178,10 @@ int delete_by_grade(student_t *students, int *size, key_t *keys)
     int admission_year;
     rc = scanf("%d", &admission_year);
     if (rc != 1 || admission_year < 1800 || admission_year > 2022)
+	{
+		printf("Год некорректен");
         return INCORRECT_DATA;
-    
+    }
     for (int student = 0; student < students_cnt; student++)
     {
         if (students[student].admission_year == admission_year)
@@ -212,7 +212,6 @@ void print_student(student_t student)
 int search(table_t table)
 {
     int admission_year;
-    system("clear");
 
     if (table.size == 0)
         return DATA_EMPTY_ERR;
@@ -270,8 +269,7 @@ int print_table(table_t table)
 }
 
 int print_keys(table_t table)
-{
-    system("clear"); 
+{ 
     int size = table.size;
     if (table.size == 0)
         return INCORRECT_DATA;
@@ -287,7 +285,6 @@ int print_keys(table_t table)
 
 int print_table_by_keys(table_t table)
 {
-    system("clear");
     if (table.size == 0)
         return INCORRECT_DATA;
 
