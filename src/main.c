@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    while (menu() == 0);
+    int rc = menu();
 
-    return EXIT_SUCCESS;
+    return rc;
 }
