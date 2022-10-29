@@ -11,6 +11,8 @@ void del_by_id(student_t *students, key_t *keys, int size, int id);
 int delete_by_grade(student_t *students, int *size, key_t *keys);
 void print_student(student_t student);
 int search(table_t table);
-
+int print_table(table_t table);
+int print_keys(table_t table);
+int print_table_by_keys(table_t table);
 
 #endif
